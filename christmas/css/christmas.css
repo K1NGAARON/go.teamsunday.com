@@ -1,0 +1,41 @@
+:root {
+    --red: #b4002d;
+    --red-2: #bb0102;
+}
+
+.section .row .primary-btn {
+    background-color: var(--red);
+}
+
+.section .row .primary-btn:hover {
+    background-color: var(--red-2);
+    color: var(--white);
+}
+
+#steps .steps-wrapper .step-item .col:nth-child(1) p {
+    background-color: var(--red);
+}
+
+.section a {
+    color: var(--red);
+    transition: var(--transition);
+}
+
+.section a:hover {
+    color: var(--red-2);
+    transition: var(--transition);
+    text-decoration: underline;
+}
+
+.section ul li:before {
+    color: var(--red);
+}
+
+.section .primary-btn:hover {
+    text-decoration: none;
+}
+
+#header,
+#footer {
+    background-color: var(--red);
+}

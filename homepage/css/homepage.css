@@ -1,0 +1,56 @@
+.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+#first {
+    height: 100vh;
+    background-image: url('../img/sunday_banner.jpg');
+    background-color: #e1dfe0;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* header & footer height aftrekken van height */
+/*  min-height voor mobiel */
+
+#first img {
+    border-radius: 6px;
+}
+
+#first h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#first h1,
+#first p {
+    text-align: center;
+}
+
+#first .btn-wrapper .primary-btn {
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+#first .btn-wrapper .primary-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#header,
+#footer {
+    background-color: var(--black);
+}
+
+@media all and (max-width: 540px) {
+    #first {
+        background-image: none;
+        height: 90vh;
+    }
+}
