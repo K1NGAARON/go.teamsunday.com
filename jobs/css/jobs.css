@@ -29,5 +29,7 @@
 
 /* VIDEOS */
 .video_embed {
-    
+    width: 100%;
+    height: auto;
 }
+
