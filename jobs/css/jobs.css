@@ -16,27 +16,18 @@
     margin-bottom: -20px;
 }
 
-.video-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 80%;
-}
-
-.video-wrapper .video-wrapper-inner {
-    width: calc(50% - 20px);
-}
-
-#hero .video-embed {
-    margin-top: 40px;
-}
-
-.video-wrapper .video-embed {
-    width: 100%!important;
-    height: fit-content!important;
-}
-
 #team {
     background-color: var(--light-grey);
+}
+
+.section.hidden {
+    display: none;
+}
+
+
+
+
+/* VIDEOS */
+.video_embed {
+    
 }
