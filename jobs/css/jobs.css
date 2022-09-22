@@ -28,6 +28,10 @@
     width: calc(50% - 20px);
 }
 
+#hero .video-embed {
+    margin-top: 40px;
+}
+
 .video-wrapper .video-embed {
     width: 100%!important;
     height: fit-content!important;
