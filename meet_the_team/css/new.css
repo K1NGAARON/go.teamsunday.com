@@ -1,0 +1,12 @@
+.teamWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.teamWrapper .team-member-item {
+    display: flex;
+    flex-direction: column;
+}
