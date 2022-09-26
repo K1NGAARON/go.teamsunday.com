@@ -1,0 +1,170 @@
+.job-offers-netherlands,
+.job-offers-belgium,
+.job-offers-germany,
+.job-offers-poland,
+.job-offers-ireland {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.job-offer-button-wrapper {
+    width: 100%;
+    margin: 0px auto 0px auto;
+    font-family: 'Poppins';
+}
+.job-offer-button-wrapper p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+.job-offer-button-wrapper a {
+    font-size: 14px;
+    padding: 0px 7px 0px 7px;
+    margin: 0px 15px 0px 15px;
+}
+.job-offer-button-wrapper a:hover {
+    text-decoration: underline #222;
+}
+.job-offers-row-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto 0px auto;
+    font-family: 'Poppins';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.job-offer {
+    max-width: 300px;
+    margin: 20px;
+}
+.all-countries-wrapper {
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.country-wrapper {
+    display: flex;
+	justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+.country-flag img {
+    max-width: 20px;
+    height: auto;
+    display: flex;
+	margin-right: 10px;
+}
+.country-name {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #222;
+}
+.fa.fa-caret-down {
+    color: #222;
+}
+@media all and (max-width: 540px) {
+    .job-offer-button-wrapper a {
+        font-size: 10px;
+    }
+}
+
+
+.belgium-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.germany-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.netherlands-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ireland-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.poland-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team-country {
+    display: none!important;
+}
+
+
+
+
+.team-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto 0px auto;
+}
+.team-member-wrapper {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 20px 30px 20px;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: 0 7px 7px 0 rgb(34 43 55 / 15%);
+}
+.team-member-wrapper h3 {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 700;
+}
+.team-member-wrapper p,
+.team-member-wrapper li {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+}
+.team-member-wrapper ul {
+    margin-top: 20px;
+}
+.team-member-wrapper img {
+    border-radius: 50%;
+    max-width: 125px;
+    height: auto;
+}
+
+@media all and (max-width: 768px) {
+    .team-member-wrapper {
+        width: 280px;
+        height: auto;
+    }
+    .job-offer-button-wrapper a {
+        margin: 0 10px 0 10px;
+    }
+}
