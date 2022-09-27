@@ -254,22 +254,22 @@ const teamMembers = [
         'topic3' : 'Always has exciting plans for the weekend '
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
+        'name' : 'Jeroen',
+        'country' : 'Belgium',
+        'function' : 'Customer Success Manager',
         'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'topic1' : 'Sunday is friends and family day',
+        'topic2' : 'Always wanted to become a professional football player',
+        'topic3' : 'Used to be an international checkers player as a child instead'
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'name' : 'Midas',
+        'country' : 'Netherlands',
+        'function' : 'Account Executive',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/MidasStreekstra.jpeg',
+        'topic1' : 'Outgoing and social, or having a drink in the city with friends',
+        'topic2' : 'On Sundays, he supports and talks about Ajax',
+        'topic3' : 'Better not to tell him that Diemen is not part of Amsterdam'
     },
     {
         'name' : '',
