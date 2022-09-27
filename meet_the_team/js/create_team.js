@@ -26,7 +26,7 @@ const teamMembers = [
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/KarelJanVercruysse.jpg',
         'topic1' : 'Probably travels the most between the Sunday subsidiaries',
         'topic2' : 'Loves fine dining on Sundays and going to KV Kortrijk soccer matches',
-        'topic3' : 'Has a knack for learning languages, he’s now studying Italian'
+        'topic3' : "Has a knack for learning languages, he's now studying Italian"
     },
     {
         'name' : 'Fabienne',
@@ -207,6 +207,87 @@ const teamMembers = [
         'topic1' : 'Loves meeting friends',
         'topic2' : 'Binges Netflix on Sundays',
         'topic3' : 'Thinks brunch is the best invention ever because it means sleeping in and waking up to Mimosas'
+    },
+    {
+        'name' : 'Ana',
+        'country' : 'Belgium',
+        'function' : 'Sales Development Representative',
+        'image' : '',
+        'topic1' : 'Fashion Amateur, fan of 19-th Century Victorian Clothing',
+        'topic2' : 'Less is more: adopting a sustainable approach to living',
+        'topic3' : 'Being clumsy is her second nature'
+    },
+    {
+        'name' : 'Charlotte',
+        'country' : 'Belgium',
+        'function' : 'Sales Development Representative',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/CharlotteVens.jpeg',
+        'topic1' : 'Might have magic hair that glows when she sings',
+        'topic2' : 'Working on her sneaker basement',
+        'topic3' : 'Professional sarcastic teaser (so don’t take her jokes too seriously)'
+    },
+    {
+        'name' : 'Clara',
+        'country' : 'Belgium',
+        'function' : 'Sales Development Representative',
+        'image' : '',
+        'topic1' : 'Brunch with my friends on Sunday ',
+        'topic2' : 'Walking with my dogs (Danish Dog & Leonberg)',
+        'topic3' : 'Go on citytrips with my friends on motorcycle '
+    },
+    {
+        'name' : 'Elisa',
+        'country' : 'Belgium',
+        'function' : 'Customer Success Manager',
+        'image' : '',
+        'topic1' : 'Likes to crack jokes, all the time',
+        'topic2' : 'Coffee was her first love and it will be her last',
+        'topic3' : 'Award to the cutest dog off all time goes to her furry friend Vino'
+    },
+    {
+        'name' : 'Iris',
+        'country' : 'belgium',
+        'function' : 'Customer Success Manager',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/IrisDevos.jpg',
+        'topic1' : 'Loves good food and drinks',
+        'topic2' : 'Is always the life of the (office) party ',
+        'topic3' : 'Always has exciting plans for the weekend '
+    },
+    {
+        'name' : '',
+        'country' : '',
+        'function' : '',
+        'image' : '',
+        'topic1' : '',
+        'topic2' : '',
+        'topic3' : ''
+    },
+    {
+        'name' : '',
+        'country' : '',
+        'function' : '',
+        'image' : '',
+        'topic1' : '',
+        'topic2' : '',
+        'topic3' : ''
+    },
+    {
+        'name' : '',
+        'country' : '',
+        'function' : '',
+        'image' : '',
+        'topic1' : '',
+        'topic2' : '',
+        'topic3' : ''
+    },
+    {
+        'name' : '',
+        'country' : '',
+        'function' : '',
+        'image' : '',
+        'topic1' : '',
+        'topic2' : '',
+        'topic3' : ''
     },
     {
         'name' : '',
