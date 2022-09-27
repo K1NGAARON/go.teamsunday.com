@@ -1,12 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #777;
+    width: 100%;
+}
+
 .teamWrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 20px;
+    padding: 60px;
     width: 100%;
-    padding: 0 30px;
 }
 
 .teamWrapper .team-member-item {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.teamWrapper .team-member-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.teamWrapper .team-member-item h4 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.teamWrapper .team-member-item .role {
+    text-align: center;
+}
+
+.teamWrapper .team-member-item ul {
+    padding: 20px;
 }

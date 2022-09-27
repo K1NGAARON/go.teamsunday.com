@@ -299,57 +299,57 @@ const teamMembers = [
         'topic3' : 'Speaks multiple languages, but is most fluent in sarcasm'
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
-    },
-    {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
-    },
-    {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
-    },
-    {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
-    },
-    {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'name' : 'Laura',
+        'country' : 'Germany',
+        'function' : 'Account Manager',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2022/03/LauraKraft.png',
+        'topic1' : 'Loves Pop Music and Trash TV',
+        'topic2' : 'Would spend every penny on traveling or her super cute Dog Alfie',
+        'topic3' : 'Wins people over with her brutal honesty and silly jokes'
     }
+    // {
+    //     'name' : '',
+    //     'country' : '',
+    //     'function' : '',
+    //     'image' : '',
+    //     'topic1' : '',
+    //     'topic2' : '',
+    //     'topic3' : ''
+    // },
+    // {
+    //     'name' : '',
+    //     'country' : '',
+    //     'function' : '',
+    //     'image' : '',
+    //     'topic1' : '',
+    //     'topic2' : '',
+    //     'topic3' : ''
+    // },
+    // {
+    //     'name' : '',
+    //     'country' : '',
+    //     'function' : '',
+    //     'image' : '',
+    //     'topic1' : '',
+    //     'topic2' : '',
+    //     'topic3' : ''
+    // },
+    // {
+    //     'name' : '',
+    //     'country' : '',
+    //     'function' : '',
+    //     'image' : '',
+    //     'topic1' : '',
+    //     'topic2' : '',
+    //     'topic3' : ''
+    // }
 ]
 
 
 function createTeam() {
     for (let i = 0; i < teamMembers.length; i++) {
         const teamTemplate = `
-            <div class="team-member-item">
+            <div class="team-member-item ${teamMembers[i].country}">
                 <img src="${teamMembers[i].image}" alt="${teamMembers[i].name}">
 
                 <h4 class="name">
