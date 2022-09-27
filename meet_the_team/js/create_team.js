@@ -272,31 +272,31 @@ const teamMembers = [
         'topic3' : 'Better not to tell him that Diemen is not part of Amsterdam'
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'name' : 'Eva',
+        'country' : 'Netherlands',
+        'function' : 'Account Manager',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/EvaDeveer.jpg',
+        'topic1' : 'True summer person',
+        'topic2' : 'On Sunday she enjoys winning a field hockey game',
+        'topic3' : 'Loves to enjoy good weather from her boat in Amsterdam'
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
-        'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'name' : 'Max',
+        'country' : 'Netherlands',
+        'function' : 'Account Executive',
+        'image' : 'https://teamsunday.com/wp-content/uploads/2022/03/MaxPierik.png',
+        'topic1' : 'On Sundays, you can probably find him in the soccer stadium to watch Liverpool',
+        'topic2' : 'Likes to practice as many sports as possible',
+        'topic3' : 'His favorite pastime is to have drinks and good food with his friends'
     },
     {
-        'name' : '',
-        'country' : '',
-        'function' : '',
+        'name' : 'Carlin',
+        'country' : 'Netherlands',
+        'function' : 'Account Executive',
         'image' : '',
-        'topic1' : '',
-        'topic2' : '',
-        'topic3' : ''
+        'topic1' : "Nothing makes her happier than spontaneous plans. Do you have a crazy idea and need a partner in crime? Hit her up!",
+        'topic2' : "Clumsiest person you'll ever meet",
+        'topic3' : 'Speaks multiple languages, but is most fluent in sarcasm'
     },
     {
         'name' : '',
