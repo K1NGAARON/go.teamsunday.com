@@ -230,7 +230,7 @@ const teamMembers = [
         'name' : 'Clara',
         'country' : 'Belgium',
         'function' : 'Sales Development Representative',
-        'image' : '',
+        'image' : 'https://intranet.teamsunday.com/wp-content/uploads/2022/09/Foto-Clara.jpeg',
         'topic1' : 'Brunch with my friends on Sunday ',
         'topic2' : 'Walking with my dogs (Danish Dog & Leonberg)',
         'topic3' : 'Go on citytrips with my friends on motorcycle '
