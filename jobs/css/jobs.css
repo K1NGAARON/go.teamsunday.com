@@ -4,7 +4,8 @@
 }
 
 .section .row {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
 }
 
 #hero h1 {
@@ -20,11 +21,9 @@
     background-color: var(--light-grey);
 }
 
-.section.hidden {
-    display: none;
+.section .row .col {
+    flex: 1 0 600px;
 }
-
-
 
 
 /* VIDEOS */
@@ -38,7 +37,6 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    /* gap: 10px; */
 }
 
 .video-gallery .testimonial-row {
@@ -47,6 +45,23 @@
     margin: 40px auto;
 }
 
-/* .video-gallery .video_embed {
-    width: calc((100% - 20px) / 2);
-} */
+
+@media (max-width: 768px) {
+    .section .row {
+        padding: 0 30px;
+    }
+
+    .section .row .col {
+        width: 100%;
+        padding: 0;
+        flex: unset;
+    }
+
+    .section * {
+        text-align: center;
+    }
+
+    .section .row .col h2 {
+        margin-top: 20px;
+    }
+}
