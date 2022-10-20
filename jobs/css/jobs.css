@@ -38,9 +38,15 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
-.video-gallery .video_embed {
-    width: calc((100% - 20px) / 2);
+.video-gallery .testimonial-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px auto;
 }
+
+/* .video-gallery .video_embed {
+    width: calc((100% - 20px) / 2);
+} */
