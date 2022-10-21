@@ -6,6 +6,11 @@
     border-bottom: 3px solid rgb(0 0 0 / 6%);
 }
 
+#header.dark,
+#footer.dark {
+    background-color: var(--black);
+}
+
 #header .row,
 #footer .row {
     margin: unset;
