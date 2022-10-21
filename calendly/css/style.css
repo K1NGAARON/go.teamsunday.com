@@ -1,9 +1,37 @@
 #book {
-    height: 90vh;
+    height: fit-content;
 }
 
-.person {
+.section .row .person {
     max-width: 150px;
     height: auto;
     border-radius: 50%;
+}
+
+.section .row {
+    flex-flow: row wrap;
+}
+
+.section .row .col {
+    flex: 1 0 400px;
+}
+
+@media (max-width: 768px) {
+    .section .row .person {
+        max-width: 200px!important;
+    }
+}
+
+@media (max-width: 875px) {
+    .section .row h1 {
+        text-align: center;
+    }
+
+    .section .row p {
+        text-align: center;
+    }
+
+    .section .row .person {
+        margin: 0 auto;
+    }
 }
