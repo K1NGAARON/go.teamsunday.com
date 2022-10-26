@@ -1,3 +1,7 @@
 .section .row .col {
     flex: 1 0 400px;
 }
+
+#hero p {
+    margin-bottom: 40px;
+}
