@@ -118,6 +118,7 @@ html {
     color: var(--white);
     border-radius: 9px;
     padding: 10px 15px;
+    margin-top: 20px;
     margin-left: 0;
     transition: var(--transition);
 }
@@ -142,6 +143,10 @@ html {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
+}
+
+.section .btn-wrapper .primary-btn {
+    margin-top: 0;
 }
 
 
