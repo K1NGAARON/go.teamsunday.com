@@ -384,9 +384,140 @@ html {
 
 
 
-
 /* FAQ */
+#content {
+    font-size: 18px;
+}
 
+.accordion-container {
+    position: relative;
+    width: 100%;
+    border-top: none;
+    outline: 0;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 2em;
+    border-top: 1px solid var(--primary);
+    font-size: 1.25em;
+    font-weight: normal;
+    color: var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion-container .article-title:nth-child(1) {
+    border-top: transparent;
+}
+
+.accordion-container .article-title:hover,
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+    color: white;
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-style: normal;
+    font-size: 1.625em;
+    color: var(--primary);
+}
+
+.accordion-container .content-entry i:before {
+    content: "+ ";
+}
+
+.accordion-container .content-entry.open i:before {
+    content: "- ";
+}
+
+.accordion-container .content-entry {
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+}
+
+.accordion-container .content-entry:first-child {
+    border-bottom: none;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+.accordion-container .content-entry:last-child {
+    border-bottom: 2px solid var(--primary);
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.accordion-container .content-entry.open {
+    border-bottom: 1px solid var(--primary);
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 2.3125em;
+    padding: 10px;
+}
+
+#content {
+    width: 70%;
+    margin-left: 0!important;
+}
+
+#accordion {
+    margin-top: 0;
+    margin-left: 0!important;
+}
+
+.accordion-container,
+#description {
+    width: 100%;
+    margin: 1.875em auto;
+}
+
+#description p {
+    line-height: 1.5;
+}
+
+#description h2 {
+    text-align: center;
+}
+
+@media all and (max-width: 540px) {
+    #content {
+        width: 100%;
+    }
+
+    .accordion-container .article-title {
+        font-size: 18px;
+    }
+
+    #content .accordion-content {
+        padding: 20px;
+    }
+
+    #content .accordion-content p {
+        text-align: left;
+    }
+
+    #content > * {
+        font-size: 14px;
+    }
+}
 
 
 /* FOOTER */
