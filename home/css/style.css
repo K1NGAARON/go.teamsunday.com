@@ -155,6 +155,9 @@ html {
 /* HERO SECTION */
 #hero {
     margin-bottom: 0;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    height: 95vh;
 }
 
 #hero .row.flex-col {
@@ -319,8 +322,58 @@ html {
 
 
 /* PRODUCTS */
+#products .row .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
 
+#products .row .wrapper .item {
+    flex: 1 0;
 
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+#products .row .wrapper .item:hover {
+    transition: var(--transition);
+    transform: scale(1.05);
+}
+
+#products .row .wrapper .item:hover * {
+    text-decoration: none;
+}
+
+#products .row .wrapper .item img {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#products .row .wrapper .item p {
+    color: var(--white);
+    font-size: 20px;
+    padding: 20px;
+}
+
+#products .row .wrapper .item:nth-child(1) {
+    background-color: var(--primary);
+}
+
+#products .row .wrapper .item:nth-child(2) {
+    background-color: var(--green);
+}
+
+#products .row .wrapper .item:nth-child(3) {
+    background-color: var(--orange);
+}
+
+#products .row .wrapper .item:nth-child(4) {
+    background-color: var(--blue);
+}
 
 /* FINAL CTA */
 

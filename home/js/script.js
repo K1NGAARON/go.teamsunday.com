@@ -106,13 +106,51 @@ function createUSPs() {
     };
 };
 
+const wrapperProducts = document.querySelector('#products > .row > .wrapper');
+const contentProducts = [
+    {
+        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
+        'product' : 'Custom product',
+        'link' : 'google.com',
+    },
+    {
+        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
+        'product' : 'Custom product',
+        'link' : 'google.com',
+    },
+    {
+        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
+        'product' : 'Custom product',
+        'link' : 'google.com',
+    },
+    {
+        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
+        'product' : 'Custom product',
+        'link' : 'google.com',
+    }
+];
+
+function createProducts() {
+    for (let i = 0; i < contentProducts.length; i++) {
+        const contentTemplate = `
+            <div class="item">
+                <a href="${contentProducts[i].url}">
+                    <img src="${contentProducts[i].img}" alt="${contentProducts[i].product}">
+                    <p>
+                        ${contentProducts[i].product}
+                    </p>
+                </a>
+            </div>
+        `;
+        wrapperProducts.insertAdjacentHTML("afterbegin", contentTemplate);
+    };
+};
+
 
 
 
 $(document).ready(function() {
-    
     createLogos();
     createUSPs();
-
-
+    createProducts();
 });
