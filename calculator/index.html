@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Wardrobe Calculator
+    </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div id="calculator">
+        <div class="item">
+            <h3>
+                Calculate your savings
+            </h3>
+            <form action="">
+                <div class="form-item">
+                    <label for="myRange">How many packages per year/month?</label>
+                    <input type="range" min="15" max="1000" value="15" class="slider" id="myRange">
+                    <div class="output-wrapper">
+                        <div id="output"></div><div class="packages">Packages</div>
+                    </div>
+                </div>
+
+                <div class="form-item checkbox">
+                    <label for="personal-note">Do you want to add a personal note?</label>
+                    <input type="checkbox" name="personal-note" id="personal-note">
+                </div>
+                
+                <div class="form-item checkbox">
+                    <label for="different-sizes">Do the items have different sizes?</label>
+                    <input type="checkbox" name="different-sizes" id="different-sizes">
+                </div>
+
+                <div class="form-item checkbox">
+                    <label for="internal-updates">Do you need to share updates internally?</label>
+                    <input type="checkbox" name="internal-updates" id="internal-updates">
+                </div>
+
+                <input class="primary-btn" type="submit" value="Calculate savings">
+            </form>
+        </div>
+
+        <div class="item output">
+            <h3>
+                Your savings
+            </h3>
+            <div class="results">
+                <div class="line-item">
+                    <div class="result">
+                        <p>
+                            Cost reduction:
+                        </p>
+                    </div>
+                    <div class="result">
+                        <span class="cost">43</span><span>%</span>
+                    </div>
+                </div>
+
+                <div class="line-item">
+                    <div class="result">
+                        <p>
+                            Money saved:
+                        </p>
+                    </div>
+                    <div class="result">
+                        <span>€</span><span class="cost">4856</span>
+                    </div>
+                </div>
+
+                <div class="line-item">
+                    <div class="result">
+                        <p>
+                            Time saved:
+                        </p>
+                    </div>
+                    <div class="result">
+                        <span class="cost">37 </span><span>hours</span>
+                    </div>
+                </div>
+        </div>
+        <a href="" class="primary-btn bottom">
+            Send to inbox
+        </a>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
