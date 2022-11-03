@@ -151,7 +151,12 @@ html {
 
 
 
+
 /* HERO SECTION */
+#hero {
+    margin-bottom: 0;
+}
+
 #hero .row.flex-col {
     align-items: flex-start;
 }
@@ -159,6 +164,32 @@ html {
 #hero .row.flex-col p {
     max-width: 50%;
 }
+
+
+/* LOGOS */
+#logos {
+    margin-top: 0;
+}
+
+#logos .row {
+    margin: 0 auto;
+}
+
+#logos .row .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+}
+
+#logos .row .wrapper a {
+    flex: 1 0;
+}
+
+#logos .row .wrapper img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+} 
 
 
 /* ABOUT */
@@ -169,18 +200,35 @@ html {
 #usp .wrapper {
     display: flex;
     flex-flow: row wrap;
-    gap: 60px;
+    gap: 30px;
 }
 
 #usp .wrapper .item {
-    flex: 1 0;
+    flex: 1 0 350px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    padding: 30px;
+    border-radius: 12px;
+    border-bottom: 3px solid #dfdfdf;
+    background-color: var(--white);
 }
 
+#usp .wrapper .item img {
+    max-width: 150px;
+    height: auto;
+}
+
+#usp .wrapper .item p {
+    margin: 10px 0;
+}
+
+#usp .wrapper .item a {
+    color: var(--primary);
+}
 
 
 
