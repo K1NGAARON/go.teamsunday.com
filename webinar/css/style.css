@@ -149,4 +149,57 @@ html {
     gap: 20px;
 }
 
+#schedule {
+    flex-direction: column;
+}
 
+#schedule .row {
+    padding: 0;
+    max-width: none;
+    margin: 20px auto;
+}
+
+#schedule .row:nth-child(even) {
+    background-color: var(--light-grey);
+}
+
+#schedule .inner-row {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
+}
+
+#schedule .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    padding: 60px 0;
+}
+
+
+#schedule .wrapper .item {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#schedule .wrapper .item:nth-child(2) {
+    flex: 2;
+}
+
+#schedule .wrapper .item h5 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#schedule .wrapper .item p {
+    font-weight: 700;
+}
+
+#schedule .wrapper .item ul {
+    margin-top: 10px;
+    margin-left: 30px;
+}
