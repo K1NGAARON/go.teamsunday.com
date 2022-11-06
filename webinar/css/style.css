@@ -177,6 +177,45 @@ html {
     height: auto;
 }
 
+
+
+
+
+
+.section.relative {
+    position: relative;
+}
+
+.section .row .visual {
+    position: absolute;
+
+    width: 100%;
+    max-width: 175px;
+    margin: unset;
+}
+
+.section .row .visual.top {
+    top: -20%;
+}
+
+.section .row .visual.bottom {
+    bottom: -20%;
+}
+
+.section .row .visual.left {
+    left: 0;
+}
+
+.section .row .visual.right {
+    right: 0;
+}
+
+
+
+
+
+
+
 #info {
     margin-top: 60px;
 }
