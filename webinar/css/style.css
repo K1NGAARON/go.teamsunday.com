@@ -62,6 +62,10 @@ html {
     text-decoration: underline;
 }
 
+.section .white {
+    color: var(--white);
+}
+
 .section img {
     width: 100%;
     height: auto;
@@ -71,7 +75,15 @@ html {
 
 .section {
     display: flex;
-    margin: 40px auto;
+    margin: 0 auto;
+}
+
+.section.purple {
+    background-color: var(--primary);
+}
+
+.section.orange {
+    background-color: var(--orange);
 }
 
 .section.grey {
@@ -92,12 +104,13 @@ html {
     width: 100%;
     max-width: 1400px;
     padding: 0 30px;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 .section .row.flex-col {
     flex-flow: column;
     padding: 0 30px;
+    gap: 20px;
 }
 
 .section .row.flex-col h2 {
@@ -106,6 +119,10 @@ html {
 
 .section .row.row-reverse {
     flex-flow: row-reverse wrap;
+}
+
+.section .row.center-text {
+    text-align: center;
 }
 
 .section .row .col {
@@ -139,103 +156,71 @@ html {
     color: var(--black);
 }
 
-.section .primary-btn.white-btn:hover {
-    
+.section .primary-btn.orange {
+    background-color: var(--orange);
+    color: var(--white);
 }
 
-.section .btn-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
+
+
+#hero {
+    height: 60vh;
+    margin: 0;
+    position: relative;
 }
 
-#schedule {
-    flex-direction: column;
-}
-
-#schedule .row {
-    padding: 0;
-    max-width: none;
-    margin: 20px auto;
-}
-
-#schedule .row:nth-child(even) {
-    background-color: var(--light-grey);
-}
-
-#schedule .inner-row {
+#hero img {
+    position: absolute;
+    bottom: -15%;
     width: 100%;
-    max-width: 1400px;
-    padding: 0 30px;
+    max-width: 750px;
+    height: auto;
 }
 
-#schedule .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
+#info {
+    margin-top: 60px;
+}
+
+#schedule .schedule-wrapper {
     width: 100%;
-    padding: 60px 0;
+    max-width: 750px;
 }
 
-
-#schedule .wrapper .item {
-    flex: 1;
-
+#schedule .schedule-wrapper .item {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
 }
 
-#schedule .wrapper .item:nth-child(2) {
-    flex: 2;
-}
-
-#schedule .wrapper .item h5 {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-#schedule .wrapper .item p {
-    font-weight: 700;
-}
-
-.section ul {
-    margin-top: 10px;
-    margin-left: 30px;
-}
-
-
-
-#steps .row .col h2 {
-    font-size: 48px;
-}
-
-#steps .row .col:nth-child(1) p {
-    font-size: 22px;
-}
-
-#steps .row .col:nth-child(1) {
-    flex: 1 0;
-}
-
-#steps .row .col:nth-child(2) {
-    flex: 2 0;
+#schedule .schedule-wrapper .item .wrapper {
+    display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     gap: 40px;
+
+    position: relative;
 }
 
-#steps .row .col .item {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 calc(50% - 40px);
+#schedule .schedule-wrapper .item .wrapper .theme {
+    position: absolute;
+    right: 0px;
+    width: 225px;
 }
 
-#steps .row .col .item .primary-btn {
-    margin-top: 10px;
+#schedule .schedule-wrapper .item .wrapper p {
+    max-width: calc((100% - 40px) / 2);
 }
 
-@media (max-width: 860px) {
-    #steps .row {
-        flex-direction: column;
-    }
+#schedule .schedule-wrapper .item .wrapper .day {
+    text-transform: uppercase;
+}
+
+#schedule .schedule-wrapper .item .wrapper .bold {
+    font-weight: 700;
+}
+
+#schedule .schedule-wrapper .item img {
+    width: 100%;
+    margin: 5px 0 15px 0;
 }
