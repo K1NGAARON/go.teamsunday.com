@@ -182,7 +182,7 @@ html {
 
 
 
-.section.relative {
+.section.relative .row {
     position: relative;
 }
 
@@ -195,11 +195,11 @@ html {
 }
 
 .section .row .visual.top {
-    top: -20%;
+    top: -100%;
 }
 
 .section .row .visual.bottom {
-    bottom: -20%;
+    bottom: -100%;
 }
 
 .section .row .visual.left {
