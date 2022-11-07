@@ -7,7 +7,7 @@ function updateCalculations(e) {
     output.innerHTML = this.value;
   }
   
-  let amountPackages = slider.value;
+  let amountPackages = slider.value * 12;
 
   console.log(amountPackages);
 
