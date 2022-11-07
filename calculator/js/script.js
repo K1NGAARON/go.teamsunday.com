@@ -81,5 +81,4 @@ $('#moneySavedHolder').html(moneySaved.toFixed(2));
 };
 
 
-// updateCalculations();
 $('#myRange').change(updateCalculations);
