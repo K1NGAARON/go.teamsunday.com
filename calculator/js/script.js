@@ -60,6 +60,11 @@ let customerService = amountPackages * (logisticsCosts.helpdeskTime * logisticsC
 let internalFollowUp = amountPackages * logisticsCosts.packagesFU * logisticsCosts.hourlyCost;
 let stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
 
+let optionals = (amountPackages * logisticsCosts.personalNote) + (amountPackages * logisticsCosts.differentSizes);
+let optionalsCost = optionals * logisticsCosts.hourlyCost;
+console.log(optionals);
+console.log(optionalsCost);
+
 let totalCost = warehousingCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
 let costPerPackage = totalCost / amountPackages;
 
