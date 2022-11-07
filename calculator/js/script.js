@@ -40,7 +40,10 @@ function updateCalculations(e) {
   hourlyCost: 32.90,
 
   packagesFU: 0.15,
-  stockCount: 2
+  stockCount: 2,
+
+  personalNote: 0,
+  differentSizes: 0,
 };
 
 
