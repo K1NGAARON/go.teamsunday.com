@@ -23,7 +23,7 @@
                     <label for="myRange">How many packages per year/month?</label>
                     <input type="range" min="15" max="1000" value="15" class="slider" id="myRange">
                     <div class="output-wrapper">
-                        <div id="output"></div><div class="packages">Packages</div>
+                        <div id="output">Choose amount of </div><div class="packages">Packages</div>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                         </p>
                     </div>
                     <div class="result">
-                        <span class="cost">43</span><span>%</span>
+                        <span id="costHolder" class="cost"></span><span>%</span>
                     </div>
                 </div>
 
@@ -69,27 +69,27 @@
                         </p>
                     </div>
                     <div class="result">
-                        <span>€</span><span class="cost">4856</span>
+                        <span>€</span><span class="cost" id="moneySavedHolder"></span>
                     </div>
                 </div>
 
-                <div class="line-item">
+                <!-- <div class="line-item">
                     <div class="result">
                         <p>
                             Time saved:
                         </p>
                     </div>
                     <div class="result">
-                        <span class="cost">37 </span><span>hours</span>
+                        <span class="cost" id="timeSavedHolder"> </span><span>hours</span>
                     </div>
-                </div>
+                </div> -->
         </div>
         <a href="" class="primary-btn bottom">
             Send to inbox
         </a>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
