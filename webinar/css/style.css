@@ -51,7 +51,11 @@ html {
 }
 
 .section p {
+    max-width: 750px;
+}
 
+.section li {
+    text-align: left;
 }
 
 .section a {
