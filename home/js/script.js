@@ -50,37 +50,37 @@ const wrapperUSP = document.querySelector("#usp > .row > .wrapper");
 const contentUSP = [
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'Sustainability',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'Highest Quality',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'Logistics',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'Success manager',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'USP 5',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
         'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
-        'heading' : 'USP 1',
+        'heading' : 'USP 6',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     }
@@ -102,7 +102,7 @@ function createUSPs() {
                 </a>
             </div>
         `;
-        wrapperUSP.insertAdjacentHTML("afterbegin", contentTemplate);
+        wrapperUSP.insertAdjacentHTML("beforeend", contentTemplate);
     };
 };
 
@@ -111,23 +111,23 @@ function createUSPs() {
 const wrapperProducts = document.querySelector('#products > .row > .wrapper');
 const contentProducts = [
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
-        'product' : 'Custom product',
+        'img' : './img/socks.jpg',
+        'product' : 'Custom socks',
         'link' : 'google.com',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
-        'product' : 'Custom product',
+        'img' : './img/onboarding.jpg',
+        'product' : 'Onboarding boxes',
         'link' : 'google.com',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
-        'product' : 'Custom product',
+        'img' : './img/hoodie.jpg',
+        'product' : 'Branded hoodies',
         'link' : 'google.com',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2022/02/John-jane-collection-min.jpg',
-        'product' : 'Custom product',
+        'img' : './img/bizzshirt.jpg',
+        'product' : 'Business wear',
         'link' : 'google.com',
     }
 ];
@@ -144,7 +144,7 @@ function createProducts() {
                 </a>
             </div>
         `;
-        wrapperProducts.insertAdjacentHTML("afterbegin", contentTemplate);
+        wrapperProducts.insertAdjacentHTML("beforeend", contentTemplate);
     };
 };
 
