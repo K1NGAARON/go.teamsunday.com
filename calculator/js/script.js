@@ -9,6 +9,8 @@ function updateCalculations(e) {
   
   let amountPackages = slider.value * 12;
 
+  $('#calculator > .item.output').addClass('active');
+
   console.log(amountPackages);
 
   // FIXED VARIABLES FOR CALCULATIONS
@@ -77,16 +79,27 @@ let wardrobeInput = (amountPackages * logisticsCosts.dataInput) * logisticsCosts
 let wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
 let wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
 
-let costReduction = ((totalCost - wardrobeFeeTotal) / totalCost) * 100;
-let moneySaved = totalCost - wardrobeFeeTotal;
+let costReduction = (((totalCost - wardrobeFeeTotal) / totalCost) * 100).toFixed(2);
+let moneySaved = (totalCost - wardrobeFeeTotal).toFixed(2);
 let hassleReduction = 1;
 
 
 // INPUT DATA ON FRONT END
-$('#costHolder').html(costReduction.toFixed(2));
-$('#moneySavedHolder').html(moneySaved.toFixed(2));
+$('#costHolder').html((new Intl.NumberFormat('de-DE').format(costReduction)));
+$('#moneySavedHolder').html((new Intl.NumberFormat('de-DE').format(moneySaved)));
 
+// (new Intl.NumberFormat('de-DE').format(costReduction));
+// console.log(new Intl.NumberFormat('de-DE').format(moneySaved));
 };
 
 
+function showEmailForm(e) {
+  e.preventDefault();
+  $('#formToMail').toggle('active');
+
+
+  $(this).toggle('active');
+}
+
 $('#myRange').change(updateCalculations);
+$('#inbox').click(showEmailForm);
