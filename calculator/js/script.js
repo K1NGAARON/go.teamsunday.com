@@ -47,7 +47,7 @@ function updateCalculations(e) {
 };
 
 
-// CALCULATED METRICS
+// GENERAL MATH
 let warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12;
 let shippingSoftware = logisticsCosts.softwareCost * 12;
 let pickingTime = ((logisticsCosts.pickingTime + logisticsCosts.tripPost + logisticsCosts.stockUpdateTime) * logisticsCosts.hourlyCost) * amountPackages;
@@ -69,7 +69,7 @@ let totalCost = warehousingCost + shippingSoftware + pickingTime + dutieMgmt + d
 let costPerPackage = totalCost / amountPackages;
 
 
-// WARDROBE METRICS
+// WARDROBE MATH
 let wardrobePlatformFee = 12 * logisticsCosts.wardrobeFee;
 let wardrobePickingFee = amountPackages * logisticsCosts.pickingFee;
 let wardrobeInput = (amountPackages * logisticsCosts.dataInput) * logisticsCosts.hourlyCost;
