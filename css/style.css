@@ -104,6 +104,10 @@ ul li {
     margin-bottom: 0;
 }
 
+.section.black {
+    background-color: var(--black)!important;
+}
+
 .section .focus-text {
     font-weight: 700;
     color: var(--primary);
@@ -179,6 +183,11 @@ ul li {
     background-color: #f5f5f5;
     position: relative;
     overflow: hidden;
+}
+
+#hero-section .primary-btn {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 #hero-section p,

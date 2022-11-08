@@ -169,7 +169,7 @@
     margin: auto;
     margin-left: 0;
     margin-top: 8px;
-    color: var(--white);
+    color: var(--black)!important;
 }
 
 .contact-form {

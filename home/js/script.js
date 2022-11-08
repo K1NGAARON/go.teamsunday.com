@@ -49,37 +49,37 @@ function createLogos() {
 const wrapperUSP = document.querySelector("#usp > .row > .wrapper");
 const contentUSP = [
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/dashboard.png',
         'heading' : 'USP 1',
         'body' : 'Lead Catcher shows your most engaged leads so you can focus on leads that will convert.',
         'url' : 'google.com'
