@@ -168,7 +168,7 @@ html {
 
 
 #hero {
-    height: 60vh;
+    height: 80vh;
     margin: 0;
     position: relative;
 }
@@ -199,7 +199,7 @@ html {
 }
 
 .section .row .visual.top {
-    top: -100%;
+    top: -50%;
 }
 
 .section .row .visual.bottom {
