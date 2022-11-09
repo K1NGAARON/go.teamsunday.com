@@ -150,6 +150,7 @@
 
 #hero-section h1 {
     font-size: 40px;
+    font-weight: 600;
     color: var(--black);
 }
 
@@ -161,6 +162,11 @@
 
 #hero-section p {
     font-size: 18px;
+}
+
+#hero-section img {
+    width: 100%;
+    height: auto;
 }
 
 #hero-section .primary-btn {
