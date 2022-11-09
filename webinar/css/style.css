@@ -35,6 +35,10 @@ html {
 
 
 /* FONTS */
+.section .fa {
+    font-family: 'FontAwesome';
+}
+
 
 .section h1 {
     font-weight: 700;
@@ -184,7 +188,44 @@ html {
 
 
 
+#review .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 26px;
+    padding: 30px;
+}
 
+#review .wrapper .item {
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#review .wrapper .item:nth-of-type(2) {
+    flex: 2 0;
+}
+
+#review .wrapper .item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#review .wrapper .item .quote {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#review .wrapper .item .author {
+    color: var(--white);
+    font-size: 16px;
+}
 
 .section.relative .row {
     position: relative;
