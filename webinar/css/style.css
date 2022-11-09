@@ -144,7 +144,7 @@ html {
     font-weight: 600;
     text-decoration: none;
     width: fit-content;
-    background-color: var(--black);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: 9px;
     padding: 10px 15px;
@@ -188,7 +188,7 @@ html {
 
 
 
-#review .wrapper {
+.review.wrapper {
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
@@ -198,31 +198,31 @@ html {
     padding: 30px;
 }
 
-#review .wrapper .item {
+.review.wrapper .item {
     flex: 1 0;
 
     display: flex;
     flex-direction: column;
 }
 
-#review .wrapper .item:nth-of-type(2) {
+.review.wrapper .item:nth-of-type(2) {
     flex: 2 0;
 }
 
-#review .wrapper .item img {
+.review.wrapper .item img {
     width: 100%;
     max-width: 200px;
     height: auto;
     border-radius: 50%;
 }
 
-#review .wrapper .item .quote {
+.review.wrapper .item .quote {
     color: var(--white);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 20px;
 }
 
-#review .wrapper .item .author {
+.review.wrapper .item .author {
     color: var(--white);
     font-size: 16px;
 }
