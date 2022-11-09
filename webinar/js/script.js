@@ -5,7 +5,8 @@ function copySuccess() {
 
 
 
-$('#share').on('click', function() {
+$('#share').on('click', function(e) {
+    e.preventDefault();
     var $temp = $("<input>");
     var $url = 'https://go.teamsunday.com/webinar/';
 
@@ -18,7 +19,8 @@ $('#share').on('click', function() {
 });
 
 
-$('#webinarLink').on('click', function() {
+$('#webinarLink').on('click', function(e) {
+    e.preventDefault();
     var $temp = $("<input>");
     var $url = 'meet.google.com/pwd-imnb-wpg';
 
