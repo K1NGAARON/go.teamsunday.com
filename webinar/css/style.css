@@ -219,12 +219,12 @@ html {
 .review.wrapper .item .quote {
     color: var(--white);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .review.wrapper .item .author {
     color: var(--white);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .section.relative .row {
