@@ -16,8 +16,11 @@
 }
 
 #hero-section {
+    background-color: transparent;
     height: fit-content!important;
-    background-image: url('../img/pattern_dark.png');
+    background-image: url('../img/background.svg');
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 .contact-form {
@@ -141,12 +144,13 @@
 }
 
 #hero-section .col:nth-child(1) * {
-    color: var(--white);
+    color: var(--black);
 }
 
 
 #hero-section h1 {
     font-size: 40px;
+    color: var(--black);
 }
 
 #hero-section h2 {
@@ -170,6 +174,7 @@
     margin-left: 0;
     margin-top: 8px;
     color: var(--black)!important;
+    background-color: #44D62C;
 }
 
 .contact-form {
