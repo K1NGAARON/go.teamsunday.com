@@ -190,7 +190,7 @@ function createFAQ() {
 
 $(document).ready(function() {
     createLogos();
-    createUSPs();
+    // createUSPs();
     createProducts();
     // createFAQ();
 });
