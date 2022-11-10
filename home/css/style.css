@@ -37,18 +37,18 @@ html {
 /* FONTS */
 
 .section h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
     line-height: 1.2;
 }
 
 .section h2 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
 }
 
 .section h3 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .section p {
@@ -116,7 +116,7 @@ html {
 }
 
 .section .primary-btn {
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     width: fit-content;
     background-color: var(--black);
@@ -188,7 +188,7 @@ html {
 
 #header .row .nav a {
     color: var(--black);
-    font-weight: 700;
+    font-weight: 600;
     transition: var(--transition);
 }
 
@@ -209,7 +209,7 @@ html {
     margin-bottom: 0;
     background-image: url('../img/banner.jpg');
     background-size: cover;
-    height: 95vh;
+    height: 80vh;
 }
 
 #hero .row.flex-col {
@@ -234,7 +234,7 @@ html {
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -368,7 +368,7 @@ html {
 }
 
 #solutions .wrapper .item .sub {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -381,11 +381,11 @@ html {
 /* REVIEW */
 #review .row .quote {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #review .row .purple {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--primary);
 }
 
@@ -482,7 +482,7 @@ html {
     font-size: 1.25em;
     font-weight: normal;
     color: var(--primary);
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -607,7 +607,7 @@ html {
 
 #footer .row h5 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #footer .row ul li {
