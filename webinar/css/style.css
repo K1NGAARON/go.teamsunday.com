@@ -294,9 +294,9 @@ html {
 }
 
 #schedule .schedule-wrapper .item .wrapper .theme {
-    position: absolute;
-    right: 0px;
-    width: 225px;
+    /* position: absolute; */
+    /* right: 0px;
+    width: 225px; */
 }
 
 #schedule .schedule-wrapper .item .wrapper p {
