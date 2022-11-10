@@ -156,6 +156,11 @@ html {
 
 
 
+#_form_636CBDAD5A2E8_  #_form_68_submit{
+    background-color: var(--white)!important;
+    color: var(--black)!important;
+}
+
 
 /* HEADER */
 #header .logo {
