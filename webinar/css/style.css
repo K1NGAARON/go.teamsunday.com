@@ -311,6 +311,10 @@ html {
     font-weight: 600;
 }
 
+#schedule .title {
+    font-size: 20px;
+}
+
 #schedule .schedule-wrapper .item img {
     width: 100%;
     margin: 5px 0 15px 0;
