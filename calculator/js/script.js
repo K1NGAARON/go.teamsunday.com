@@ -14,7 +14,7 @@ function updateCalculations(e) {
   console.log(amountPackages);
 
   // FIXED VARIABLES FOR CALCULATIONS
-  const logisticsCosts = {
+const logisticsCosts = {
   wardrobeFee: 395,
   pickingFee: 4,
 
@@ -28,15 +28,15 @@ function updateCalculations(e) {
   importNecessary: 0.1,
 
   errorRate: 0.048,
- 
+
   helpdeskTime: 0.5,
   helpdeskNecessary: 0.1,
- 
+
   returnTime: 0.33,
   returnNecessary: 0.05,
 
   stockUpdateTime: 0.15,
-  
+
   materialCost: 0.5,
   softwareCost: 49,
   hourlyCost: 32.90,
@@ -64,8 +64,6 @@ let stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
 
 let optionals = (amountPackages * logisticsCosts.personalNote) + (amountPackages * logisticsCosts.differentSizes);
 let optionalsCost = optionals * logisticsCosts.hourlyCost;
-console.log(optionals);
-console.log(optionalsCost);
 
 let totalCost = warehousingCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
 let costPerPackage = totalCost / amountPackages;
@@ -88,15 +86,12 @@ let hassleReduction = 1;
 $('#costHolder').html((new Intl.NumberFormat('de-DE').format(costReduction)));
 $('#moneySavedHolder').html((new Intl.NumberFormat('de-DE').format(moneySaved)));
 
-// (new Intl.NumberFormat('de-DE').format(costReduction));
-// console.log(new Intl.NumberFormat('de-DE').format(moneySaved));
 };
 
 
 function showEmailForm(e) {
   e.preventDefault();
   $('#formToMail').toggle('active');
-
 
   $(this).toggle('active');
 }
