@@ -354,6 +354,16 @@ html {
     font-size: 30px;
 }
 
+@media (max-width: 540px) {
+    .review.wrapper {
+        flex-direction: column;
+    }
+
+    .section .row .col {
+        flex: 1 0 100%;
+    }
+}
+
 @media (max-width: 768px) {
     #hero {
         height: 60vh;
