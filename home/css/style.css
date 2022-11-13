@@ -119,7 +119,7 @@ html {
     font-weight: 600;
     text-decoration: none;
     width: fit-content;
-    background-color: var(--black);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: 9px;
     padding: 7px 14px;
@@ -507,7 +507,7 @@ html {
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     /* background-color: hsla(0, 0%, 100%, 0.1); */
-    background-color: var(--dark-grey);
+    background-color: var(--primary);
     display: flex;
     width: 36px;
     height: 36px;
