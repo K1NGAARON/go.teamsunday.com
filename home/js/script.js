@@ -148,49 +148,63 @@ function createProducts() {
     };
 };
 
-// CREATE FAQ
-const wrapperFAQ = document.querySelector('#faq > .row > .wrapper');
-const contentFAQ = [
-    {
-        'question' : "Question 1",
-        'answer' : "Answer 1",
-    },
-    {
-        'question' : "Question 2",
-        'answer' : "Answer 2",
-    }
-];
 
-function createFAQ() {
-    for (let i = 0; i < contentFAQ.length; i++) {
-        const contentTemplate = `
-            <div class="accordion-item">
-                <div class="accordion-head">
-                    <h5>
-                        ${contentFAQ[i].question}
-                    </h5>
-                    <div class="icon">
-                        <img src="https://uploads-ssl.webflow.com/60d125d7d4b5bee59a7a6941/60d125d7d4b5beea017a6a16_icon-chevron-right-small-white.svg" alt="">
-                    </div>
-                </div>
-                <div class="accordion-body">
-                    <p>
-                        ${contentFAQ[i].answer}
-                    </p>
-                </div>
-            </div>
-        `;
-        // Insert after "last FAQ" item
-        wrapperFAQ.insertAdjacentHTML("afterbegin", contentTemplate);
-    };
+
+// CREATE FAQ
+// const wrapperFAQ = document.querySelector('#faq > .row > .accordion-list');
+// const contentFAQ = [
+//     {
+//         'question' : "Question 1",
+//         'answer' : "Answer 1",
+//     },
+//     {
+//         'question' : "Question 2",
+//         'answer' : "Answer 2",
+//     }
+// ];
+
+// function createFAQ() {
+//     for (let i = 0; i < contentFAQ.length; i++) {
+//         const contentTemplate = `
+//         <div class="accordion-item">
+//             <div class="accordion-head">
+//                 <h5>
+//                     ${contentFAQ[i].question}
+//                 </h5>
+//                 <div class="icon">
+//                     <img src="https://uploads-ssl.webflow.com/60d125d7d4b5bee59a7a6941/60d125d7d4b5beea017a6a16_icon-chevron-right-small-white.svg" alt="">
+//                 </div>
+//             </div>
+//             <div class="accordion-body">
+//                 <p>
+//                     ${contentFAQ[i].answer}
+//                 </p>
+//             </div>
+//         </div>
+//         `;
+//         // Insert after "last FAQ" item
+//         wrapperFAQ.insertAdjacentHTML("beforeend", contentTemplate);
+//     };
+// };
+
+function toggleFAQ(e) {
+    console.log('clickced');
+
+    $(this).children('.accordion-head').toggleClass('active');
+    $(this).children('.accordion-head').siblings('.accordion-body').toggleClass('active');
+    $(this).children('.accordion-head').children('.icon').toggleClass('active');
 };
 
 
+$('.accordion-item').click(toggleFAQ);
 
 
-$(document).ready(function() {
+function runScripts() {
     createLogos();
     // createUSPs();
     createProducts();
     // createFAQ();
-});
+};
+
+$(document).ready(runScripts);
+
