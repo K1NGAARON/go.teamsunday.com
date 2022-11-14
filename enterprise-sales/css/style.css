@@ -48,24 +48,29 @@
 
 
 /* ACTIVECAMPAIGN FORM */
-.contact-form #_form_637236B37A2A0_ {
-    margin: 0;
+#_form_637236B37A2A0_ {
+    margin: 0!important;
 }
 
-.contact-form #_form_637236B37A2A0_ ._form_element input {
-    border-radius: 12px;
-    height: 40px;
+#_form_637236B37A2A0_ ._form_element input {
+    border-radius: 12px!important;
+    height: 40px!important;
 }
 
-.contact-form #_form_637236B37A2A0_ ._form_element input[type="checkbox"] {
-    height: unset;
+#_form_637236B37A2A0_ ._form_element input[type="checkbox"] {
+    height: unset!important;
 }
 
-.contact-form #_form_637236B37A2A0_ ._form_element label {
-    padding-left: 5px;
+#_form_637236B37A2A0_ ._form_element label {
+    padding-left: 5px!important;
 }
 
-.contact-form #_form_637236B37A2A0_ ._submit {
+#_form_63723ADB26D4A_ input[type="text"] {
+    border-radius: 12px!important;
+    height: 40px!important;
+}
+
+.contact-form #_form_63724FBC90AF8_ ._submit {
     background-color: var(--green)!important;
     color: var(--white)!important;
     border-radius: 12px!important;
