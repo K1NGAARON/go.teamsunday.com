@@ -10,12 +10,16 @@
     color: var(--white);
 }
 
+.section .row {
+    gap: 40px;
+}
+
 .section .float-item {
     position: absolute;
     top: -25%;
     left: 10%;
 
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
 
     display: flex;
@@ -76,4 +80,24 @@
     border-radius: 12px!important;
     font-weight: 700!important;
     font-size: 18px;
+}
+
+@media (max-width: 970px) {
+    .section.purple .row .col:nth-child(1) {
+        display: none;
+    }
+
+    .section .row .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section.grey .row {
+        flex-direction: column;
+    }
+
+    .section .float-item {
+        position: unset;
+        max-width: none;
+    }
 }
