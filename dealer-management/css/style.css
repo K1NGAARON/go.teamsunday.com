@@ -52,29 +52,29 @@
 
 
 /* ACTIVECAMPAIGN FORM */
-#_form_63726019BEA8E_ {
+.contact-form ._form {
     margin: 0!important;
 }
 
-#_form_63726019BEA8E_ ._form_element input {
+.contact-form ._form ._form_element input {
     border-radius: 12px!important;
     height: 40px!important;
 }
 
-#_form_63726019BEA8E_ ._form_element input[type="checkbox"] {
+.contact-form ._form ._form_element input[type="checkbox"] {
     height: unset!important;
 }
 
-#_form_63726019BEA8E_ ._form_element label {
+.contact-form ._form_ ._form_element label {
     padding-left: 5px!important;
 }
 
-#_form_63726019BEA8E_ input[type="text"] {
+.contact-form ._form_ input[type="text"] {
     border-radius: 12px!important;
     height: 40px!important;
 }
 
-.contact-form #_form_63726019BEA8E_ ._submit {
+.contact-form ._form ._form-content ._submit {
     background-color: var(--green)!important;
     color: var(--white)!important;
     border-radius: 12px!important;
