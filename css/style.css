@@ -19,6 +19,7 @@
     --box-shadow: 20px 0 60px rgb(14 27 56 / 15%);
     --box-shadow-dark: 0px 6px 15px 5px rgb(14 27 56 / 30%);
     --transition: all .25s ease-in-out;
+    --border-bottom: 3px solid #dfdfdf;
 }
 
 html {
@@ -104,6 +105,10 @@ ul li {
     margin-bottom: 0;
 }
 
+.section.grey {
+    background-color: var(--light-grey);
+}
+
 .section.black {
     background-color: var(--black)!important;
 }
@@ -179,8 +184,6 @@ ul li {
 }
 
 #hero-section {
-    background-image: url('https://teamsunday.com/wp-content/uploads/2022/08/background_image.svg');
-    background-color: #f5f5f5;
     position: relative;
     overflow: hidden;
 }

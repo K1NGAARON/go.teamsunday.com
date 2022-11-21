@@ -15,18 +15,17 @@
 }
 
 #hero-section {
-    background-color: var(--white)!important;
     height: fit-content!important;
 }
 
 #hero-section h1,
 #hero-section p {
-    color: var(--black)!important;
+    color: var(--black);
 }
 
 #hero-section .contact-form {
-    background-color: var(--light-grey)!important;
-    box-shadow: var(--box-shadow-dark);
+    background-color: var(--light-grey);
+    border-bottom: var(--border-bottom);
 }
 
 #hero-section .contact-form h2 {
@@ -196,7 +195,6 @@
 }
 
 #hero-section {
-    background-color: var(--background-dark);
     /* position: relative; */
     height: 70vh;
     overflow: unset;
