@@ -2,9 +2,6 @@ function copySuccess() {
     alert('URL copied successfully!');
 };
 
-
-
-
 $('#share').on('click', function(e) {
     e.preventDefault();
     var $temp = $("<input>");
@@ -17,7 +14,6 @@ $('#share').on('click', function(e) {
 
     copySuccess();
 });
-
 
 $('#webinarLink').on('click', function(e) {
     e.preventDefault();
