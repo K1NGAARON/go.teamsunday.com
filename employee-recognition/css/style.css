@@ -56,6 +56,10 @@
 }
 
 
+.section .row img {
+    border-radius: 12px;
+}
+
 
 @media (max-width: 940px) {
     #hero-section {
