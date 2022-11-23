@@ -259,8 +259,6 @@
     background-color: var(--white);
     padding: 30px;
     border-radius: 12px;
-    /* position: absolute; */
-    margin-bottom: -60px;
 }
 
 #hero-section .row:nth-child(1) {
@@ -291,6 +289,10 @@
     font-weight: 700;
     margin-bottom: 0;
     color: var(--white);
+}
+
+._row._checkbox-radio input[type="checkbox"] {
+    width: fit-content;
 }
 
 @media all and (max-width: 720px) {
