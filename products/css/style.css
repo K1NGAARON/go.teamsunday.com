@@ -134,12 +134,12 @@
 }
 
 #gallery .wrapper .item {
-    flex: 1 0 600px;
+    flex: 1;
 }
 
-#gallery .wrapper .item:nth-of-type(3) {
+/* #gallery .wrapper .item:nth-of-type(3) {
     flex: 2 0 1200px;
-}
+} */
 
 #gallery .wrapper .item img {
     width: 100%;

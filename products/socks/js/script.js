@@ -78,6 +78,13 @@ function changeLocationInfo(e) {
 // IMAGE SLIDER
 
 
+
+
 // VIDEO ZOOM
 
+
+
+
+
+// CALL FUNCTIONS
 $('.locations > a').click(changeLocationInfo);
