@@ -75,13 +75,9 @@ function changeLocationInfo(e) {
     }
 };
 
-// IMAGE SLIDER
-
-
-
 
 // VIDEO ZOOM
-
+const video = document.querySelector('.video_embed');
 
 
 
