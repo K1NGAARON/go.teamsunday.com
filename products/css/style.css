@@ -104,6 +104,10 @@
     cursor: pointer;
 }
 
+.section.purple .contact-form select option {
+    color: var(--black);
+}
+
 .logo-wrapper {
     display: flex;
     flex-flow: row wrap;
