@@ -24,12 +24,11 @@
     padding-right: 0;
 }
 
+/* CONTACT FORM */
 .contact-form {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
-    padding: 30px;
-    border-radius: 12px;
+    margin-bottom: 40px;
 }
 
 .contact-form form {
@@ -44,15 +43,38 @@
     font-size: 12px!important;
 }
 
+.contact-form ._form-content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+.contact-form ._field-wrapper {
+    display: flex;
+}
+
+.contact-form ._form-content ._form_element {
+    flex: 1;
+    width: unset;
+    max-width: unset;
+    margin-bottom: 0!important;
+}
+
 .contact-form input,
 .contact-form select {
-    width: 100%;
+    flex: 1;
+
+    width: unset!important;
     margin: 8px 0!important;
     padding: 10px 15px!important;
     border-radius: 9px!important;
     border: 1px solid var(--primary)!important;
     font-size: 14px!important;
     color: var(--black)!important;
+}
+
+.contact-form input[type="checkbox"] {
+    width: fit-content;
 }
 
 .contact-form input:focus-visible,
