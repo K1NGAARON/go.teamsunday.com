@@ -79,6 +79,10 @@ function changeLocationInfo(e) {
 // VIDEO ZOOM
 const video = document.querySelector('.video_embed');
 
+function scaleElement(e) {
+    
+}
+
 
 
 
