@@ -53,7 +53,7 @@ const teamMembers = [
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/BirgitRaes.jpg',
         'topic1' : 'Always open for a quick chat and happy to help with whatever you need',
         'topic2' : 'Loves reading, cooking and playing music on Sundays',
-        'topic3' : 'Considers winning ‘best halloween costume’ as one of her greatest professional achievements'
+        'topic3' : 'Considers winning ‘best halloween costume' as one of her greatest professional achievements'
     },
     {
         'name' : 'Lieselot',
@@ -170,7 +170,7 @@ const teamMembers = [
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/BasielSinnesael.jpg',
         'topic1' : 'Salesman with keen interest in cities and food & drink',
         'topic2' : 'Loves padel, barbecue and beers',
-        'topic3' : 'Owner of a great Spotify playlist called ‘zet ma tandje luwre’. It’s a banger!'
+        'topic3' : 'Owner of a great Spotify playlist called ‘zet ma tandje luwre'. It's a banger!'
     },
     {
         'name' : 'Nicola',
@@ -179,7 +179,7 @@ const teamMembers = [
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/NicolaNeve.jpg',
         'topic1' : 'Salesman who loves a good laugh',
         'topic2' : 'Loves cycling or playing padel during the weekend',
-        'topic3' : 'Nicola’s last name is ‘Neve’, which is Portuguese for ‘snow’.'
+        'topic3' : 'Nicola's last name is ‘Neve', which is Portuguese for ‘snow'.'
     },
     {
         'name' : 'Timon',
@@ -187,8 +187,8 @@ const teamMembers = [
         'function' : 'Account Executive',
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/TimonDedeyster.jpg',
         'topic1' : 'Salesman specialised in HR, business consultancy and Telecom clients',
-        'topic2' : 'Loves watching ‘Casa De Papel’ on Netflix',
-        'topic3' : 'He’s the quiet type, but will suddenly pull a 450K deal out of nowhere'
+        'topic2' : 'Loves watching ‘Casa De Papel' on Netflix',
+        'topic3' : 'He's the quiet type, but will suddenly pull a 450K deal out of nowhere'
     },
     {
         'name' : 'Louis',
@@ -224,7 +224,7 @@ const teamMembers = [
         'image' : 'https://teamsunday.com/wp-content/uploads/2021/11/CharlotteVens.jpeg',
         'topic1' : 'Might have magic hair that glows when she sings',
         'topic2' : 'Working on her sneaker basement',
-        'topic3' : 'Professional sarcastic teaser (so don’t take her jokes too seriously)'
+        'topic3' : 'Professional sarcastic teaser (so don't take her jokes too seriously)'
     },
     {
         'name' : 'Clara',
