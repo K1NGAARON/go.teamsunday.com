@@ -57,15 +57,23 @@ function changeLocationInfo(e) {
         cityHolder.innerHTML = locationInfo[1].city;
         phoneHolder.innerHTML = locationInfo[1].phone;
     } else if (activeSelection === 'berlin') {
-        
+        streetHolder.innerHTML = locationInfo[2].street;
+        cityHolder.innerHTML = locationInfo[2].city;
+        phoneHolder.innerHTML = locationInfo[2].phone;
     } else if (activeSelection === 'lodz') {
-
+        streetHolder.innerHTML = locationInfo[3].street;
+        cityHolder.innerHTML = locationInfo[3].city;
+        phoneHolder.innerHTML = locationInfo[3].phone;
     } else if (activeSelection === 'dublin') {
-        
+        streetHolder.innerHTML = locationInfo[4].street;
+        cityHolder.innerHTML = locationInfo[4].city;
+        phoneHolder.innerHTML = locationInfo[4].phone;
     } else if (activeSelection === 'london') {
-
+        streetHolder.innerHTML = locationInfo[5].street;
+        cityHolder.innerHTML = locationInfo[5].city;
+        phoneHolder.innerHTML = locationInfo[5].phone;
     }
-}
+};
 
 // IMAGE SLIDER
 
