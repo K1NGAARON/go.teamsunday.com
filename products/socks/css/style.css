@@ -40,3 +40,17 @@
         margin: 20px 0;
     }
 }
+
+@media (max-width: 540px) {
+    .section .logo-wrapper .item img {
+        max-width: 100px!important;
+    }
+
+    .section p.large {
+        font-size: 26px;
+    }
+
+    .wrapper .info {
+        align-items: flex-start;
+    }
+}
