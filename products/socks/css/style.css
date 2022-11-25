@@ -3,5 +3,18 @@
     max-width: 900px;
     height: auto;
     margin: 0 auto;
-    /* transform: scale(); */
+}
+
+#header .row {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px!important;
+}
+
+.primary-btn.white,
+.primary-btn.white:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
