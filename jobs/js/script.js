@@ -37,7 +37,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/stage-hr',
         'positionCountry' : 'Belgium',
         'positionCity' : 'Roeselare',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png' 
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
+        'order' : '7'
     },
     {
         'positionTitle' : 'Sales Traineeship Amsterdam',
@@ -46,7 +47,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-traineeship/',
         'positionCountry' : 'Netherlands',
         'positionCity' : 'Amsterdam',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png' 
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png',
+        'order' : '11'
     },
     {
         'positionTitle' : 'Sales Traineeship Roeselare',
@@ -55,17 +57,19 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-traineeship/',
         'positionCountry' : 'Belgium',
         'positionCity' : 'Roeselare',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png' 
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
+        'order' : '11'
     },
-    {
-        'positionTitle' : 'Financial Controller',
-        'positionText' : 'Je bent verantwoordelijk om de financiële rapportering van de groep tot een hoger niveau te tillen.',
-        'positionALT' : 'Financial controller at Sunday',
-        'positionURL' : '/en/jobs/financial-controller-roeselare/',
-        'positionCountry' : 'Belgium',
-        'positionCity' : 'Roeselare',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png' 
-    },
+    // {
+    //     'positionTitle' : 'Financial Controller',
+    //     'positionText' : 'Je bent verantwoordelijk om de financiële rapportering van de groep tot een hoger niveau te tillen.',
+    //     'positionALT' : 'Financial controller at Sunday',
+    //     'positionURL' : '/en/jobs/financial-controller-roeselare/',
+    //     'positionCountry' : 'Belgium',
+    //     'positionCity' : 'Roeselare',
+    //     'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
+    //     'order' : ''
+    // },
     {
         'positionTitle' : 'Account Executive',
         'positionText' : 'Our business grows with you. Close some interesting deals with us!',
@@ -73,7 +77,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/account-executive-germany/',
         'positionCountry' : 'Germany',
         'positionCity' : 'Berlin',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Germany-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Germany-Flag.png',
+        'order' : '3'
     },
     {
         'positionTitle' : 'Account Executive',
@@ -82,7 +87,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/account-executive-belgium/',
         'positionCountry' : 'Belgium',
         'positionCity' : 'Roeselare',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
+        'order' : '1'
     },
     {
         'positionTitle' : 'Account Executive',
@@ -91,7 +97,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/account-executive-ireland/',
         'positionCountry' : 'Ireland',
         'positionCity' : 'Dublin',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png',
+        'order' : '8'
     },
     {
         'positionTitle' : 'Account Executive',
@@ -100,7 +107,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/account-executive-netherlands/',
         'positionCountry' : 'Netherlands',
         'positionCity' : 'Amsterdam',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png',
+        'order' : '2'
     },
     {
         'positionTitle' : 'Sales Development Representative',
@@ -109,7 +117,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-development-representative-netherlands/',
         'positionCountry' : 'Netherlands',
         'positionCity' : 'Amsterdam',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Netherlands-Flag.png',
+        'order' : '5'
     },
     {
         'positionTitle' : 'Sales Development Representative',
@@ -118,7 +127,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-development-representative-belgium/',
         'positionCountry' : 'Belgium',
         'positionCity' : 'Roeselare',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
+        'order' : '4'
     },
     {
         'positionTitle' : 'Sales Development Representative',
@@ -127,7 +137,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-development-representative-germany/',
         'positionCountry' : 'Germany',
         'positionCity' : 'Berlin',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Germany-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Germany-Flag.png',
+        'order' : '6'
     },
     {
         'positionTitle' : 'Sales Development Representative',
@@ -136,7 +147,8 @@ const jobsArray = [
         'positionURL' : '/en/jobs/sales-development-representative-ireland/',
         'positionCountry' : 'Ireland',
         'positionCity' : 'Dublin',
-        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png'
+        'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png',
+        'order' : '9'
     }
 ];
 
@@ -144,9 +156,9 @@ const jobsArray = [
 function createJobBox() {
     for (let i = 0; i < jobsArray.length; i++) {
         const randomImage = jobsIMG[Math.floor((Math.random() * jobsIMG.length))];
-        
+
         const jobTemplate = `
-            <div class="job-post ${jobsArray[i].positionCountry}">
+            <div class="job-post ${jobsArray[i].positionCountry}" style="order: ${jobsArray[i].order}">
                 <div class="col">
                     <img src="${randomImage}" alt="${jobsArray[i].positionALT}">
                 </div>
