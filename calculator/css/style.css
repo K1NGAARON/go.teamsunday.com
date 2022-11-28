@@ -302,5 +302,9 @@ html {
     #calculator .item .line-item span {
         font-size: 20px;
     }
+
+    #calculator form input[type=range] {
+        width: 100%;
+    }
 }
 
