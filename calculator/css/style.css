@@ -279,6 +279,28 @@ html {
 
 
 @media (max-width: 768px) {
+    #calculator {
+        gap: 20px;
+        padding: 0 30px;
+    }
 
+    #calculator .item,
+    #calculator .item:nth-of-type(1) {
+        flex: 1 0 100%;
+    }
+
+    #output,
+    .packages {
+        font-size: 12px;
+    }
+
+    #inbox {
+        font-size: 12px;
+    }
+
+    #calculator h3,
+    #calculator .item .line-item span {
+        font-size: 20px;
+    }
 }
 
