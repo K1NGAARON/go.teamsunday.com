@@ -778,14 +778,16 @@
     background-color: var(--white);
     justify-content: center;
     margin: 20px;
-    border-radius: 9px;
+    border-radius: 12px;
     box-shadow: var(--box-shadow);
-    width: 25%;
+    flex: 1 0 400px;
 }
 
 .custom-section-full .custom-row .job-post img {
     width: 100%;
     height: auto;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
 .custom-section-full .custom-row .job-post h3 {

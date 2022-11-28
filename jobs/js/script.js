@@ -28,9 +28,6 @@ const jobsIMG = [
     './img/image-7.jpg'
 ];
 
-const randomIMG = jobsIMG.sort((a, b) => 0.5 - Math.random());
-
-
 const jobsWrapper = document.querySelector("#jobs-section");
 const jobsArray = [
     {
@@ -144,12 +141,14 @@ const jobsArray = [
 ];
 
 // Create job post wrapper
-function createJobBox() {    
+function createJobBox() {
     for (let i = 0; i < jobsArray.length; i++) {
+        const randomImage = jobsIMG[Math.floor((Math.random() * jobsIMG.length))];
+        
         const jobTemplate = `
             <div class="job-post ${jobsArray[i].positionCountry}">
                 <div class="col">
-                    <img src="${jobsIMG[i]}" alt="${jobsArray[i].positionALT}">
+                    <img src="${randomImage}" alt="${jobsArray[i].positionALT}">
                 </div>
                 <div class="col">
                     <div class="country-wrapper">
