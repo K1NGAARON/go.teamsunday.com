@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Jobs Builder
+    </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<div class="custom-section-full" id="hero-section">
+    <div class="custom-row flex-col center-text">
+        <h1>
+            Discover our job openings
+        </h1>
+        <p class="hidden">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quo dignissimos rerum impedit inventore voluptatem rem, totam velit! Impedit, voluptas?
+        </p>
+    </div>
+</div>
+
+<div class="custom-section-full">
+    <div class="custom-row" id="filter-row">
+        <div class="filter-wrapper">
+            <label>
+                Filter
+            </label>
+            <select id="country" name="country">
+                <option value="" selected disabled hidden>Country</option>
+                <option value="View all">View all</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="custom-section-full" id="job-offers">
+    <div class="custom-row" id="jobs-section"></div>
+</div>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
