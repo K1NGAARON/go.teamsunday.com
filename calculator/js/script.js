@@ -14,7 +14,7 @@ function updateCalculations(e) {
   console.log(amountPackages);
 
 // FIXED VARIABLES FOR CALCULATIONS
-const logisticsCosts = {
+let logisticsCosts = {
   wardrobeFee: 395,
   pickingFee: 4,
 
@@ -48,6 +48,23 @@ const logisticsCosts = {
   differentSizes: 0,
 };
 
+// Check if checkboxes are "checked"
+if (document.querySelector('#personal-note').checked) {
+  logisticsCosts.personalNote = 0.15;
+  console.log('changed personal note varible');
+} else {
+  logisticsCosts.personalNote = 0;
+};
+
+if (document.querySelector('#different-sizes').checked) {
+  logisticsCosts.differentSizes = 0.25;
+} else {
+  logisticsCosts.differentSizes = 0;
+}
+
+console.log(logisticsCosts.personalNote);
+console.log(logisticsCosts.differentSizes);
+
 
 // GENERAL MATH
 let warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12;
@@ -65,7 +82,7 @@ let stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
 let optionals = (amountPackages * logisticsCosts.personalNote) + (amountPackages * logisticsCosts.differentSizes);
 let optionalsCost = optionals * logisticsCosts.hourlyCost;
 
-let totalCost = warehousingCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
+let totalCost = warehousingCost + optionalsCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
 let costPerPackage = totalCost / amountPackages;
 
 
@@ -97,4 +114,7 @@ function showEmailForm(e) {
 }
 
 $('#myRange').change(updateCalculations);
+$('#personal-note').change(updateCalculations);
+$('#different-sizes').change(updateCalculations);
+
 $('#inbox').click(showEmailForm);
