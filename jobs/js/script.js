@@ -18,11 +18,6 @@ function dropdownFilter() {
     });
 };
 
-function randomizeIMG(e) {
-    const randomIMG = jobsIMG.sort((a, b) => 0.5 - Math.random());
-    console.log(randomIMG);
-}
-
 const jobsIMG = [
     './img/image-1.jpg',
     './img/image-2.jpg',
@@ -33,12 +28,14 @@ const jobsIMG = [
     './img/image-7.jpg'
 ];
 
+const randomIMG = jobsIMG.sort((a, b) => 0.5 - Math.random());
+
+
 const jobsWrapper = document.querySelector("#jobs-section");
 const jobsArray = [
     {
         'positionTitle' : 'Stage HR',
         'positionText' : 'Als trainee van team Sunday bouw je dagelijks mee aan dit ambassadeurschap.',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/DE.jpg',
         'positionALT' : 'stage HR',
         'positionURL' : '/en/jobs/stage-hr',
         'positionCountry' : 'Belgium',
@@ -48,7 +45,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Traineeship Amsterdam',
         'positionText' : 'Ben je ambitieus en leg je graag contacten? Ben je op zoek naar een uitdaging in een internationaal bedrijf?',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/BE2.jpg',
         'positionALT' : 'Sales Traineeship at Sunday',
         'positionURL' : '/en/jobs/sales-traineeship/',
         'positionCountry' : 'Netherlands',
@@ -58,7 +54,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Traineeship Roeselare',
         'positionText' : 'Ben je ambitieus en leg je graag contacten? Ben je op zoek naar een uitdaging in een internationaal bedrijf?',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/EXTRA3.jpg',
         'positionALT' : 'Sales Traineeship at Sunday',
         'positionURL' : '/en/jobs/sales-traineeship/',
         'positionCountry' : 'Belgium',
@@ -68,7 +63,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Financial Controller',
         'positionText' : 'Je bent verantwoordelijk om de financiële rapportering van de groep tot een hoger niveau te tillen.',
-        'positionIMG' : '/wp-content/uploads/2022/05/DE.jpg',
         'positionALT' : 'Financial controller at Sunday',
         'positionURL' : '/en/jobs/financial-controller-roeselare/',
         'positionCountry' : 'Belgium',
@@ -78,7 +72,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Account Executive',
         'positionText' : 'Our business grows with you. Close some interesting deals with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/DE.jpg',
         'positionALT' : 'Account executive at Sunday',
         'positionURL' : '/en/jobs/account-executive-germany/',
         'positionCountry' : 'Germany',
@@ -88,7 +81,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Account Executive',
         'positionText' : 'Our business grows with you. Close some interesting deals with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/EXTRA3.jpg',
         'positionALT' : 'Account executive at Sunday',
         'positionURL' : '/en/jobs/account-executive-belgium/',
         'positionCountry' : 'Belgium',
@@ -98,7 +90,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Account Executive',
         'positionText' : 'Our business grows with you. Close some interesting deals with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/IRL.jpg',
         'positionALT' : 'Account executive at Sunday',
         'positionURL' : '/en/jobs/account-executive-ireland/',
         'positionCountry' : 'Ireland',
@@ -108,7 +99,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Account Executive',
         'positionText' : 'Our business grows with you. Close some interesting deals with us!',
-        'positionIMG' : '/wp-content/uploads/2022/05/DE.jpg',
         'positionALT' : 'Account executive at Sunday',
         'positionURL' : '/en/jobs/account-executive-netherlands/',
         'positionCountry' : 'Netherlands',
@@ -118,7 +108,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Development Representative',
         'positionText' : 'Our business starts with you. Hunt for promising leads with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/NL.jpg',
         'positionALT' : 'Sales development representative at Sunday',
         'positionURL' : '/en/jobs/sales-development-representative-netherlands/',
         'positionCountry' : 'Netherlands',
@@ -128,7 +117,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Development Representative',
         'positionText' : 'Our business starts with you. Hunt for promising leads with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/BE2.jpg',
         'positionALT' : 'Sales development representative at Sunday',
         'positionURL' : '/en/jobs/sales-development-representative-belgium/',
         'positionCountry' : 'Belgium',
@@ -138,7 +126,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Development Representative',
         'positionText' : 'Our business starts with you. Hunt for promising leads with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/DE2.jpg',
         'positionALT' : 'Sales development representative at Sunday',
         'positionURL' : '/en/jobs/sales-development-representative-germany/',
         'positionCountry' : 'Germany',
@@ -148,7 +135,6 @@ const jobsArray = [
     {
         'positionTitle' : 'Sales Development Representative',
         'positionText' : 'Our business starts with you. Hunt for promising leads with us!',
-        'positionIMG' : 'https://teamsunday.com/wp-content/uploads/2022/05/IRL2.jpg',
         'positionALT' : 'Sales development representative at Sunday',
         'positionURL' : '/en/jobs/sales-development-representative-ireland/',
         'positionCountry' : 'Ireland',
@@ -163,7 +149,7 @@ function createJobBox() {
         const jobTemplate = `
             <div class="job-post ${jobsArray[i].positionCountry}">
                 <div class="col">
-                    <img src="${jobsArray[i].positionIMG}" alt="${jobsArray[i].positionALT}">
+                    <img src="${jobsIMG[i]}" alt="${jobsArray[i].positionALT}">
                 </div>
                 <div class="col">
                     <div class="country-wrapper">
