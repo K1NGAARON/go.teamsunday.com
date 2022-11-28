@@ -51,7 +51,6 @@ let logisticsCosts = {
 // Check if checkboxes are "checked"
 if (document.querySelector('#personal-note').checked) {
   logisticsCosts.personalNote = 0.15;
-  console.log('changed personal note varible');
 } else {
   logisticsCosts.personalNote = 0;
 };
@@ -60,11 +59,7 @@ if (document.querySelector('#different-sizes').checked) {
   logisticsCosts.differentSizes = 0.25;
 } else {
   logisticsCosts.differentSizes = 0;
-}
-
-console.log(logisticsCosts.personalNote);
-console.log(logisticsCosts.differentSizes);
-
+};
 
 // GENERAL MATH
 let warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12;
