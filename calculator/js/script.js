@@ -13,7 +13,7 @@ function updateCalculations(e) {
 
   console.log(amountPackages);
 
-  // FIXED VARIABLES FOR CALCULATIONS
+// FIXED VARIABLES FOR CALCULATIONS
 const logisticsCosts = {
   wardrobeFee: 395,
   pickingFee: 4,
