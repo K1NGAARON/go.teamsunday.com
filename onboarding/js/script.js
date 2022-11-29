@@ -38,8 +38,11 @@ function animate(obj, initVal, lastVal, duration) {
     
     function load() {
         animate(websites, 0, 1274, 5200);
-    }
+    };
+
 
     
-    
+
+
+
 document.addEventListener('DOMContentLoaded', load());
