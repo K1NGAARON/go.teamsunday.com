@@ -49,7 +49,7 @@ const page = {
                 $('#formToMail').html('<h2>Thank you for your message!</h2>');
             }).fail(function (err) {
                 alert('There was an error sending your message. Please try again.');
-            }).complete(function () {
+            }).done(function () {
                 $('#formToMail').find('[typeof="submit"]').prop('disabled', false);
             });
         },
