@@ -389,3 +389,31 @@ html {
         font-size: 24px;
     }
 }
+
+
+
+
+
+
+
+#video {
+    background-color: var(--light-grey);
+}
+
+.video_embed {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wrapper .item {
+    flex: 1;
+}
