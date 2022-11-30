@@ -421,6 +421,10 @@ html {
     opacity: 1;
 }
 
+.wrapper .item h5 {
+    font-weight: 700;
+}
+
 
 .cases-wrapper {
     display: flex;
