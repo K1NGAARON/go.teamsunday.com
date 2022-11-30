@@ -1,3 +1,5 @@
+const nameInputElement = $('#formToMail [name="name"]');
+
 const page = {
     data: {
         cost_reduction: 0,
@@ -10,7 +12,8 @@ const page = {
         const self = this;
         $('#formToMail').on('submit', function (event) {
             event.preventDefault()
-            self.methods.onSubmitEvent.bind(self)();
+            const fn = self.methods.onSubmitEvent.bind(self)
+            fn();
             return false;
         });
 
@@ -20,38 +23,43 @@ const page = {
         $('#different-sizes').change(updateCalculationsFn);
 
         const showEmailFormFn = self.methods.showEmailForm.bind(self)
-        $('#inbox').click(showEmailFormFn);
+        $('#inbox').on('click', showEmailFormFn);
     },
     methods: {
         showEmailForm: function (e) {
             e.preventDefault();
             $('#formToMail').toggle('active');
             $('#inbox').toggle('active');
+            nameInputElement.focus();
         },
         onSubmitEvent: function () {
             const self = this;
             $('#formToMail').find('[type="submit"]').prop('disabled', true);
 
-            $.ajax({
-                url: 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process',
-                method: 'POST',
-                data: {
-                    cost_reduction: self.data.cost_reduction,
-                    email_address: $('#formToMail [name="email"]').val(),
-                    money_saved: self.data.money_saved,
-                    monthly_packages: $('#output').text(),
-                    name: $('#formToMail [name="name"]').val(),
-                    // total_costs: '', // Optional
-                    // wardrobe_fee_total: '', // Optional
-                },
-                dataType: 'json',
-            }).then(function (data) {
-                $('#formToMail').html('<h2>Thank you for your message!</h2>');
-            }).fail(function (err) {
-                alert('There was an error sending your message. Please try again.');
-            }).done(function () {
-                $('#formToMail').find('[typeof="submit"]').prop('disabled', false);
-            });
+            const data = new FormData();
+
+            const payLoad = {
+                name: nameInputElement.val(),
+                email_address: $('#formToMail [name="email"]').val(),
+                monthly_packages: $('#myRange').val(),
+                cost_reduction: parseFloat(self.data.cost_reduction),
+                money_saved: parseFloat(self.data.money_saved),
+                // total_costs: '', // Optional
+                // wardrobe_fee_total: '', // Optional
+            }
+
+            data.append('payload', JSON.stringify(payLoad));
+
+            axios.post('https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process', data)
+                .then(() => {
+                    $('#formToMail').html('<h2>Thank you for your message!</h2>');
+                })
+                .catch(() => {
+                    alert('There was an error sending your message. Please try again.');
+                })
+                .then(function () {
+                    $('#formToMail').find('[type="submit"]').prop('disabled', false);
+                });
         },
         updateCalculations: function () {
             const slider = document.getElementById("myRange");
@@ -107,7 +115,6 @@ const page = {
             } else {
                 logisticsCosts.personalNote = 0;
             }
-            ;
 
             if (document.querySelector('#different-sizes').checked) {
                 logisticsCosts.differentSizes = 0.25;
@@ -132,7 +139,7 @@ const page = {
             const optionalsCost = optionals * logisticsCosts.hourlyCost;
 
             const totalCost = warehousingCost + optionalsCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
-            const costPerPackage = totalCost / amountPackages;
+            // const costPerPackage = totalCost / amountPackages;
 
 
             // WARDROBE MATH
@@ -141,11 +148,11 @@ const page = {
             const wardrobeInput = (amountPackages * logisticsCosts.dataInput) * logisticsCosts.hourlyCost;
 
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
-            const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
+            // const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
 
             const costReduction = (((totalCost - wardrobeFeeTotal) / totalCost) * 100).toFixed(2);
             const moneySaved = (totalCost - wardrobeFeeTotal).toFixed(2);
-            const hassleReduction = 1;
+            // const hassleReduction = 1;
 
 
             // INPUT DATA ON FRONT END
