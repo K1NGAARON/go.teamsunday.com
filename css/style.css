@@ -105,12 +105,20 @@ ul li {
     margin-bottom: 0;
 }
 
+.section.purple {
+    background-color: var(--primary);
+}
+
+.section.orange {
+    background-color: var(--orange);
+}
+
 .section.grey {
     background-color: var(--light-grey);
 }
 
 .section.black {
-    background-color: var(--black)!important;
+    background-color: var(--black);
 }
 
 .section .focus-text {

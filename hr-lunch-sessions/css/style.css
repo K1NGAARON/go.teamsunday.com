@@ -293,12 +293,6 @@ html {
     position: relative;
 }
 
-#schedule .schedule-wrapper .item .wrapper .theme {
-    /* position: absolute; */
-    /* right: 0px;
-    width: 225px; */
-}
-
 #schedule .schedule-wrapper .item .wrapper p {
     max-width: calc((100% - 40px) / 2);
 }
@@ -416,4 +410,51 @@ html {
 
 .wrapper .item {
     flex: 1;
+    position: relative;
+}
+
+.wrapper .item .video_embed {
+    opacity: 0.3;
+}
+
+.wrapper .item.active .video_embed {
+    opacity: 1;
+}
+
+
+.cases-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.cases-wrapper .item {
+    flex: 1 0 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    border-radius: 12px;
+    border-bottom: var(--border-bottom);
+}
+
+.cases-wrapper .item .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cases-wrapper .item .content a {
+    margin-top: auto;
+}
+
+.cases-wrapper .item img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
