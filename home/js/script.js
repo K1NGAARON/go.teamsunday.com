@@ -201,7 +201,7 @@ $('.accordion-item').click(toggleFAQ);
 
 function runScripts() {
     createLogos();
-    // createUSPs();
+    createUSPs();
     createProducts();
     // createFAQ();
 };
