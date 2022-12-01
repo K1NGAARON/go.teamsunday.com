@@ -34,14 +34,14 @@ const jobsIMG = [
 const jobsWrapper = document.querySelector("#jobs-section");
 const jobsArray = [
     {
-        'positionTitle' : 'Stage HR',
+        'positionTitle' : 'HR Traineeship',
         'positionText' : 'Als trainee van team Sunday bouw je dagelijks mee aan dit ambassadeurschap.',
-        'positionALT' : 'stage HR',
+        'positionALT' : 'HR Traineeship',
         'positionURL' : '/en/jobs/stage-hr',
         'positionCountry' : 'Belgium',
         'positionCity' : 'Roeselare',
         'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Belgium-Flag.png',
-        'order' : '7'
+        'order' : '9'
     },
     {
         'positionTitle' : 'Sales Traineeship Amsterdam',
@@ -101,7 +101,7 @@ const jobsArray = [
         'positionCountry' : 'Ireland',
         'positionCity' : 'Dublin',
         'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png',
-        'order' : '8'
+        'order' : '7'
     },
     {
         'positionTitle' : 'Account Executive',
@@ -151,7 +151,7 @@ const jobsArray = [
         'positionCountry' : 'Ireland',
         'positionCity' : 'Dublin',
         'flagURL' : 'https://teamsunday.com/wp-content/uploads/2021/08/Ireland-Flag.png',
-        'order' : '9'
+        'order' : '8'
     }
 ];
 
