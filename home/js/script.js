@@ -7,28 +7,28 @@ const contentLogos = [
         'case-link' : 'tba',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/SumUp-Logo.svg',
-        'client' : 'SumUp',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2022/01/Oaky.png',
+        'client' : 'Oaky',
         'case-link' : 'tba',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/SumUp-Logo.svg',
-        'client' : 'SumUp',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/10/Google-Logo.svg',
+        'client' : 'Google',
         'case-link' : 'tba',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/SumUp-Logo.svg',
-        'client' : 'SumUp',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/09/Deloitte-Logo.svg',
+        'client' : 'Deloitte',
         'case-link' : 'tba',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/SumUp-Logo.svg',
-        'client' : 'SumUp',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/TikTok-Logo.svg',
+        'client' : 'TikTok',
         'case-link' : 'tba',
     },
     {
-        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/SumUp-Logo.svg',
-        'client' : 'SumUp',
+        'img' : 'https://teamsunday.com/wp-content/uploads/2021/08/AirBnB-Logo_1.svg',
+        'client' : 'AirBnb',
         'case-link' : 'tba',
     }
 ];
