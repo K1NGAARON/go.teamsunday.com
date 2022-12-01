@@ -19,16 +19,16 @@ function dropdownFilter() {
 };
 
 const jobsIMG = [
-    './img/image-1.jpg',
-    './img/image-2.jpg',
-    './img/image-3.jpg',
-    './img/image-4.jpg',
-    './img/image-5.jpg',
-    './img/image-6.jpg',
-    './img/image-7.jpg',
-    './img/image-8.jpg',
-    './img/image-9.jpg',
-    './img/image-10.jpg'
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-1.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-2.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-3.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-4.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-5.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-6.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-7.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-8.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-9.jpg',
+    'https://teamsunday.com/wp-content/uploads/2022/12/image-10.jpg'
 ];
 
 const jobsWrapper = document.querySelector("#jobs-section");
