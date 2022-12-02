@@ -74,13 +74,28 @@ const page = {
                 }
             }).then(() => {
                 formElement.html('<h2>Thank you for your message!</h2>');
-            }).catch(() => {
+            }).catch((error) => {
+                if (error.response) {
+                    // The request was made and the server responded with a status code
+                    // that falls out of the range of 2xx
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                } else if (error.request) {
+                    // The request was made but no response was received
+                    // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+                    // http.ClientRequest in node.js
+                    console.log(error.request);
+                } else {
+                    // Something happened in setting up the request that triggered an Error
+                    console.log('Error', error.message);
+                }
+                console.log(error.config);
                 alert('There was an error sending your message. Please try again later.');
             }).then(function () {
                 submitButton.prop('disabled', false);
                 emailInput.prop('disabled', true);
                 nameInputElement.prop('disabled', true);
-            }).always(function (jqXHR, textStatus) {
                 console.log('jqXHR ', jqXHR);
                 console.log('textStatus ', textStatus);
             });
