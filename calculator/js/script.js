@@ -65,8 +65,8 @@ const page = {
 
             data.append('payload', JSON.stringify(payLoad));
 
-            const postUrl = 'http://localhost:8002/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
-            // const postUrl = 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
+            // const postUrl = 'http://localhost:8002/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
+            const postUrl = 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
 
             axios.post(postUrl, data)
                 .then(() => {
