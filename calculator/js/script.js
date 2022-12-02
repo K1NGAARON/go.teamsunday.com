@@ -96,9 +96,9 @@ const page = {
                 //     console.log('Error', error.message);
                 }
                 console.log(error.config);
-                self.revertForm();
+                page.revertForm();
             }).then(function () {
-                self.revertForm();
+                page.revertForm();
             });
         },
         revertForm: function() {
