@@ -96,8 +96,6 @@ const page = {
                 submitButton.prop('disabled', false);
                 emailInput.prop('disabled', true);
                 nameInputElement.prop('disabled', true);
-                console.log('jqXHR ', jqXHR);
-                console.log('textStatus ', textStatus);
             });
         },
         updateCalculations: function () {
