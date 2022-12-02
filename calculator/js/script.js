@@ -69,7 +69,9 @@ const page = {
             const postUrl = 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
 
             axios.post(postUrl, data, {
-                    headers: {'Content-Type': 'multipart/form-data'}
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
                 })
                 .then(() => {
                     formElement.html('<h2>Thank you for your message!</h2>');
