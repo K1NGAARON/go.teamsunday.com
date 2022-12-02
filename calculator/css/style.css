@@ -93,7 +93,7 @@ html {
 #calculator .primary-btn {
     font-weight: 700;
     text-decoration: none;
-    width: fit-content;
+    /*width: fit-content;*/
     background-color: var(--primary);
     color: var(--white);
     border-radius: 9px;

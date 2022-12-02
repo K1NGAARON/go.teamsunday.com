@@ -1,3 +1,6 @@
+const emailInput = $('#formToMail [name="email"]');
+const formElement = $('#formToMail');
+const inboxElement = $('#inbox');
 const nameInputElement = $('#formToMail [name="name"]');
 
 const page = {
@@ -10,7 +13,7 @@ const page = {
     },
     events: function () {
         const self = this;
-        $('#formToMail').on('submit', function (event) {
+        formElement.on('submit', function (event) {
             event.preventDefault()
             const fn = self.methods.onSubmitEvent.bind(self)
             fn();
@@ -23,42 +26,59 @@ const page = {
         $('#different-sizes').change(updateCalculationsFn);
 
         const showEmailFormFn = self.methods.showEmailForm.bind(self)
-        $('#inbox').on('click', showEmailFormFn);
+        inboxElement.on('click', showEmailFormFn);
     },
     methods: {
         showEmailForm: function (e) {
             e.preventDefault();
-            $('#formToMail').toggle('active');
-            $('#inbox').toggle('active');
+            formElement.toggle('active');
+            inboxElement.toggle('active');
             nameInputElement.focus();
         },
         onSubmitEvent: function () {
             const self = this;
-            $('#formToMail').find('[type="submit"]').prop('disabled', true);
+            const submitButton = formElement.find('[type="submit"]');
+            submitButton.html('<i class="fa fa-spinner fa-spin"></i> Send to mail');
+            submitButton.prop('disabled', true);
+
+            emailInput.prop('disabled', true);
+            nameInputElement.prop('disabled', true);
 
             const data = new FormData();
 
             const payLoad = {
-                name: nameInputElement.val(),
-                email_address: $('#formToMail [name="email"]').val(),
-                monthly_packages: $('#myRange').val(),
                 cost_reduction: parseFloat(self.data.cost_reduction),
+                data_input_costs: self.data.data_input_costs,
+                email_address: emailInput.val(),
+                error_management_costs: self.data.error_management_costs,
+                fulfilment_costs: self.data.fulfilment_costs,
                 money_saved: parseFloat(self.data.money_saved),
-                // total_costs: '', // Optional
-                // wardrobe_fee_total: '', // Optional
+                monthly_packages: $('#myRange').val(),
+                name: nameInputElement.val(),
+                total_costs: self.data.total_costs,
+                wardrobe_data_input: self.data.wardrobe_data_input,
+                wardrobe_fee_total: self.data.wardrobe_fee_total,
+                wardrobe_picking_fee: self.data.wardrobe_picking_fee,
+                wardrobe_platform_fee: self.data.wardrobe_platform_fee,
+                warehousing_costs: parseFloat(self.data.warehousing_costs),
             }
 
             data.append('payload', JSON.stringify(payLoad));
 
-            axios.post('https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process', data)
+            const postUrl = 'http://localhost:8002/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
+            // const postUrl = 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
+
+            axios.post(postUrl, data)
                 .then(() => {
-                    $('#formToMail').html('<h2>Thank you for your message!</h2>');
+                    formElement.html('<h2>Thank you for your message!</h2>');
                 })
                 .catch(() => {
                     alert('There was an error sending your message. Please try again.');
                 })
                 .then(function () {
-                    $('#formToMail').find('[type="submit"]').prop('disabled', false);
+                    submitButton.prop('disabled', false);
+                    emailInput.prop('disabled', true);
+                    nameInputElement.prop('disabled', true);
                 });
         },
         updateCalculations: function () {
@@ -126,7 +146,7 @@ const page = {
             const warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12;
             const shippingSoftware = logisticsCosts.softwareCost * 12;
             const pickingTime = ((logisticsCosts.pickingTime + logisticsCosts.tripPost + logisticsCosts.stockUpdateTime) * logisticsCosts.hourlyCost) * amountPackages;
-            const dutieMgmt = amountPackages * (logisticsCosts.importDocuments * logisticsCosts.importNecessary) * logisticsCosts.hourlyCost;
+            const dutyMgmt = amountPackages * (logisticsCosts.importDocuments * logisticsCosts.importNecessary) * logisticsCosts.hourlyCost;
             const dataInput = amountPackages * logisticsCosts.dataInput * logisticsCosts.hourlyCost;
             const materialCosts = amountPackages * logisticsCosts.materialCost;
             const resendingCosts = amountPackages * logisticsCosts.errorRate * (pickingTime / 500);
@@ -138,7 +158,7 @@ const page = {
             const optionals = (amountPackages * logisticsCosts.personalNote) + (amountPackages * logisticsCosts.differentSizes);
             const optionalsCost = optionals * logisticsCosts.hourlyCost;
 
-            const totalCost = warehousingCost + optionalsCost + shippingSoftware + pickingTime + dutieMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
+            const totalCost = warehousingCost + optionalsCost + shippingSoftware + pickingTime + dutyMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
             // const costPerPackage = totalCost / amountPackages;
 
 
@@ -150,14 +170,24 @@ const page = {
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
             // const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
 
-            const costReduction = (((totalCost - wardrobeFeeTotal) / totalCost) * 100).toFixed(2);
-            const moneySaved = (totalCost - wardrobeFeeTotal).toFixed(2);
+            const costReduction = ((totalCost - wardrobeFeeTotal) / totalCost) * 100;
+            const moneySaved = totalCost - wardrobeFeeTotal;
             // const hassleReduction = 1;
 
 
             // INPUT DATA ON FRONT END
             page.data.cost_reduction = costReduction;
+            page.data.data_input_costs = dataInput;
+            page.data.error_management_costs = resendingCosts;
+            page.data.fulfilment_costs = pickingTime;
             page.data.money_saved = moneySaved;
+            page.data.total_costs = totalCost;
+            page.data.wardrobe_data_input = wardrobeInput;
+            page.data.wardrobe_fee_total = wardrobeFeeTotal;
+            page.data.wardrobe_picking_fee = wardrobePickingFee;
+            page.data.wardrobe_platform_fee = wardrobePlatformFee;
+            page.data.warehousing_costs = warehousingCost;
+
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
             $('#costHolder').html(germanNumberFormat.format(costReduction));
             $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved));
