@@ -82,8 +82,9 @@ const page = {
                     // console.log(error.response.status);
                     // console.log(error.response.headers);
 
-                    if (error.response.data.trim() !== '') {
-                        alert('There was an error sending your message. Please try again later.');
+                    if (error.response.data.hasOwnProperty('message')
+                        && error.response.data.message.trim() !== 'An email was sent') {
+                        alert(error.response.data.message);
                     }
                 // } else if (error.request) {
                 //     // The request was made but no response was received
