@@ -69,21 +69,21 @@ const page = {
             const postUrl = 'https://connect.teamsunday.com/api/go/campaign/2be84180-d928-40d3-a97f-c1dd576bc558/process';
 
             axios.post(postUrl, payLoad, {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                .then(() => {
-                    formElement.html('<h2>Thank you for your message!</h2>');
-                })
-                .catch(() => {
-                    alert('There was an error sending your message. Please try again.');
-                })
-                .then(function () {
-                    submitButton.prop('disabled', false);
-                    emailInput.prop('disabled', true);
-                    nameInputElement.prop('disabled', true);
-                });
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(() => {
+                formElement.html('<h2>Thank you for your message!</h2>');
+            }).catch(() => {
+                alert('There was an error sending your message. Please try again later.');
+            }).then(function () {
+                submitButton.prop('disabled', false);
+                emailInput.prop('disabled', true);
+                nameInputElement.prop('disabled', true);
+            }).always(function (jqXHR, textStatus) {
+                console.log('jqXHR ', jqXHR);
+                console.log('textStatus ', textStatus);
+            });
         },
         updateCalculations: function () {
             const slider = document.getElementById("myRange");
