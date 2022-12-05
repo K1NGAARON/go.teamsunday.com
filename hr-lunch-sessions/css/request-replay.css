@@ -32,27 +32,8 @@
     color: var(--black);
 }
 
-#social-proof {
-    background-color: var(--light-grey)!important;
-}
-
-#social-proof p,
-#social-proof span {
-    color: var(--black)!important;
-}
-
-
 #hero-section {
     background-image: none!important;
-}
-
-#hero-section .arrow {
-    margin-left: 50%!important;
-}
-
-#hero-section .focus {
-    color: var(--primary)!important;
-    font-weight: 700;
 }
 
 
@@ -69,20 +50,7 @@
     .section .row {
         flex-wrap: wrap;
     }
-
-    #social-proof .row {
-        align-items: center!important;
-        margin-top: 60px!important;
-    }
 }
-
-@media (max-width: 1200px) {
-    #social-proof p,
-    #social-proof span {
-        font-size: 20px!important;
-    }
-}
-
 
 #hero-section .contact-form form {
     margin: 0!important;
@@ -133,38 +101,6 @@
     transform: scale(1.05);
     cursor: pointer;
 }
-
-.social-proof-wrapper {
-    margin-top: 40px;
-}
-
-.social-proof-wrapper .sending-for {
-    font-size: 12px!important;
-    font-weight: 400;
-    margin-bottom: 0;
-    color: var(--dark-grey);
-}
-
-.social-proof-wrapper .logo-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
-    width: 100%;
-}
-
-.social-proof-wrapper .logo-wrapper img {
-    max-width: 120px;
-    height: auto;
-    margin-left: 0;
-}
-
-
-
-#social-proof #websites {
-    color: var(--primary)!important;
-}
-
-
 
 
 
@@ -277,24 +213,6 @@
     max-width: none!important;
 }
 
-#social-proof {
-    background-color: var(--background-dark-accent);
-}
-
-#social-proof .row {
-    align-items: center;
-    padding: 0 30px;
-    margin: 40px auto;
-}
-
-#social-proof .row p,
-#social-proof .row span {
-    font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 0;
-    color: var(--white);
-}
-
 @media all and (max-width: 720px) {
     #hero-section .row h1 {
         font-size: 30px;
@@ -318,15 +236,6 @@
     .section .row .col {
         width: 100%;
         margin: unset;
-    }
-
-    #social-proof .row {
-        align-items: center;
-    }
-
-    #social-proof .row .large,
-    #social-proof .row span {
-        font-size: 20px;
     }
 
     .section.large .row .primary-btn {
@@ -356,9 +265,5 @@
 
     #hero-section .contact-form {
         position: unset;
-    }
-
-    .social-proof-wrapper .logo-wrapper img {
-        width: 70px;
     }
 }
