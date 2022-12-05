@@ -2,6 +2,7 @@ const emailInput = $('#formToMail [name="email"]');
 const formElement = $('#formToMail');
 const inboxElement = $('#inbox');
 const nameInputElement = $('#formToMail [name="name"]');
+const submitButton = formElement.find('[type="submit"]');
 
 const page = {
     data: {
@@ -37,7 +38,6 @@ const page = {
         },
         onSubmitEvent: function () {
             const self = this;
-            const submitButton = formElement.find('[type="submit"]');
             submitButton.html('<i class="fa fa-spinner fa-spin"></i> Send to mail');
             submitButton.prop('disabled', true);
 
@@ -75,33 +75,19 @@ const page = {
             }).then(() => {
                 formElement.html('<h2>Thank you for your message!</h2>');
             }).catch((error) => {
+                console.error(error);
                 if (error.response) {
-                    // // The request was made and the server responded with a status code
-                    // // that falls out of the range of 2xx
-                    // console.log(error.response.data);
-                    // console.log(error.response.status);
-                    // console.log(error.response.headers);
-
                     if (error.response.data.hasOwnProperty('message')
                         && error.response.data.message.trim() !== 'An email was sent') {
                         alert(error.response.data.message);
                     }
-                // } else if (error.request) {
-                //     // The request was made but no response was received
-                //     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-                //     // http.ClientRequest in node.js
-                //     console.log(error.request);
-                // } else {
-                //     // Something happened in setting up the request that triggered an Error
-                //     console.log('Error', error.message);
                 }
-                console.log(error.config);
                 self.revertForm();
             }).then(function () {
                 self.revertForm();
             });
         },
-        revertForm: function() {
+        revertForm: function () {
             submitButton.prop('disabled', false);
             emailInput.prop('disabled', true);
             nameInputElement.prop('disabled', true);
@@ -168,24 +154,40 @@ const page = {
             }
 
             // GENERAL MATH
-            const warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12;
+            // Warehousing Costs
             const shippingSoftware = logisticsCosts.softwareCost * 12;
-            const pickingTime = ((logisticsCosts.pickingTime + logisticsCosts.tripPost + logisticsCosts.stockUpdateTime) * logisticsCosts.hourlyCost) * amountPackages;
-            const dutyMgmt = amountPackages * (logisticsCosts.importDocuments * logisticsCosts.importNecessary) * logisticsCosts.hourlyCost;
-            const dataInput = amountPackages * logisticsCosts.dataInput * logisticsCosts.hourlyCost;
+            const stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
             const materialCosts = amountPackages * logisticsCosts.materialCost;
-            const resendingCosts = amountPackages * logisticsCosts.errorRate * (pickingTime / 500);
+            const warehousingCost = amountPackages * logisticsCosts.warehousingPerPiece * 12
+                + shippingSoftware
+                + stockCounts
+                + materialCosts;
+
+            // Fulfilment Costs
+            const personalNoteCosts = amountPackages * logisticsCosts.personalNote;
+            const differentSizesCosts = amountPackages * logisticsCosts.differentSizes;
+            const pickingTime = ((logisticsCosts.pickingTime + logisticsCosts.tripPost
+                    + logisticsCosts.stockUpdateTime) * logisticsCosts.hourlyCost) * amountPackages
+                + personalNoteCosts
+                + differentSizesCosts;
+
+            // Data Input Costs
+            const dutyMgmt = amountPackages * (logisticsCosts.importDocuments * logisticsCosts.importNecessary) * logisticsCosts.hourlyCost;
+            const internalFollowUp = amountPackages * logisticsCosts.packagesFU * logisticsCosts.hourlyCost;
+            const dataInput = amountPackages * logisticsCosts.dataInput * logisticsCosts.hourlyCost
+                + dutyMgmt
+                + internalFollowUp;
+
+
+            // Error Management Costs
             const returnMgmt = amountPackages * (logisticsCosts.returnTime * logisticsCosts.returnNecessary) * logisticsCosts.hourlyCost;
             const customerService = amountPackages * (logisticsCosts.helpdeskTime * logisticsCosts.helpdeskNecessary) * logisticsCosts.hourlyCost;
-            const internalFollowUp = amountPackages * logisticsCosts.packagesFU * logisticsCosts.hourlyCost;
-            const stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
+            const resendingCosts = amountPackages * logisticsCosts.errorRate * (pickingTime / 500)
+                + returnMgmt
+                + customerService;
 
-            const optionals = (amountPackages * logisticsCosts.personalNote) + (amountPackages * logisticsCosts.differentSizes);
-            const optionalsCost = optionals * logisticsCosts.hourlyCost;
-
-            const totalCost = warehousingCost + optionalsCost + shippingSoftware + pickingTime + dutyMgmt + dataInput + materialCosts + resendingCosts + returnMgmt + customerService + internalFollowUp + stockCounts;
+            const totalCost = warehousingCost + pickingTime + dataInput + resendingCosts;
             // const costPerPackage = totalCost / amountPackages;
-
 
             // WARDROBE MATH
             const wardrobePlatformFee = 12 * logisticsCosts.wardrobeFee;
@@ -198,7 +200,6 @@ const page = {
             const costReduction = ((totalCost - wardrobeFeeTotal) / totalCost) * 100;
             const moneySaved = totalCost - wardrobeFeeTotal;
             // const hassleReduction = 1;
-
 
             // INPUT DATA ON FRONT END
             page.data.cost_reduction = costReduction;
