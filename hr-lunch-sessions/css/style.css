@@ -434,7 +434,25 @@ html {
 }
 
 .wrapper .item h5 {
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.wrapper.thumbnail .item img {
+    width: 100%;
+    border-radius: 26px;
+    margin-top: 10px;
+}
+
+.wrapper.thumbnail .item.active img {
+    opacity: 1;
+}
+
+.wrapper.thumbnail .item img {
+    opacity: 0.3;
+}
+
+.wrapper.thumbnail .item:hover {
+    cursor: pointer;
 }
 
 
