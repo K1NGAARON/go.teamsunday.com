@@ -28,12 +28,9 @@ function loadVideo(e) {
 
     const activeVideo = document.querySelector('.wrapper .item.active');
 
-    console.log(this);
 
-
-
-
-
+    console.log(e.target);
+    console.log(e.target.id);
 
 };
 
