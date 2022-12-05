@@ -443,11 +443,11 @@ html {
     margin-top: 10px;
 }
 
-.wrapper.thumbnail .item.active img {
+.wrapper.thumbnail .item.active {
     opacity: 1;
 }
 
-.wrapper.thumbnail .item img {
+.wrapper.thumbnail .item {
     opacity: 0.3;
 }
 
