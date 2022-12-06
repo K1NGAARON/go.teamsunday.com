@@ -194,6 +194,11 @@ const page = {
             const wardrobePickingFee = amountPackages * logisticsCosts.pickingFee;
             const wardrobeInput = (amountPackages * logisticsCosts.dataInput) * logisticsCosts.hourlyCost;
 
+            const wardrobeError = (amountPackages * logisticsCosts.helpdeskNecessary * 0.08 * logisticsCosts.hourlyCost)
+                + (0.01 * 2.5 * amountPackages);
+
+            
+
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
             // const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
 
