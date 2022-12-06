@@ -82,9 +82,9 @@ const page = {
                         alert(error.response.data.message);
                     }
                 }
-                self.revertForm();
+                self.methods.revertForm();
             }).then(function () {
-                self.revertForm();
+                self.methods.revertForm();
             });
         },
         revertForm: function () {
