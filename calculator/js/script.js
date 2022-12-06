@@ -8,6 +8,7 @@ const page = {
     data: {
         cost_reduction: 0,
         money_saved: 0,
+        redirectUrlAfterSuccess: '/calculator/thanks',
     },
     ready: function () {
         this.events();
@@ -73,7 +74,8 @@ const page = {
                     'Content-Type': 'application/json'
                 }
             }).then(() => {
-                formElement.html('<h2>Thank you for your message!</h2>');
+                window.location.href = self.data.redirectUrlAfterSuccess;
+                // formElement.html('<h2>Thank you for your message!</h2>');
             }).catch((error) => {
                 console.error(error);
                 if (error.response) {
@@ -83,8 +85,8 @@ const page = {
                     }
                 }
                 self.methods.revertForm();
-            }).then(function () {
-                self.methods.revertForm();
+            // }).then(function () {
+            //     self.methods.revertForm();
             });
         },
         revertForm: function () {
