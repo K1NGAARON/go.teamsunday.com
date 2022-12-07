@@ -186,6 +186,14 @@ html {
 }
 
 
+#video .wrapper {
+    flex-flow: row wrap;
+}
+
+#video .wrapper .item {
+    flex: 1 0 200px;
+}
+
 
 
 .review.wrapper {
