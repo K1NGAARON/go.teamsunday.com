@@ -194,6 +194,31 @@ html {
     flex: 1 0 200px;
 }
 
+#main .row {
+    gap: 0;
+}
+
+#main h2 {
+    width: 100%;
+    max-width: 900px;
+    font-size: 26px!important;
+    text-align: left;
+    background-color: var(--white);
+    color: var(--black)!important;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+#videoHolder .video_embed {
+    margin-top: 0;
+}
+
+#videoHolder .video_embed div iframe {
+    border-top-right-radius: 0!important;
+    border-top-left-radius: 0!important;
+}
+
 
 
 .review.wrapper {
