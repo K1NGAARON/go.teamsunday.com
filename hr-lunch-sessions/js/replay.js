@@ -61,6 +61,8 @@ function loadVideo(e) {
     };
 
     // SCROLLL TO VIDEO
+    document.getElementById("videoHolder").scrollIntoView();
+
 
 };
 
