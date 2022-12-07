@@ -62,10 +62,6 @@ function loadVideo(e) {
 
     // SCROLLL TO VIDEO
     document.getElementById("videoHolder").scrollIntoView();
-
-
 };
-
-
 
 $('.wrapper .item').click(loadVideo);
