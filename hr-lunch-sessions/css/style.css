@@ -201,7 +201,7 @@ html {
 #main h2 {
     width: 100%;
     max-width: 900px;
-    font-size: 26px!important;
+    font-size: 22px!important;
     text-align: left;
     background-color: var(--white);
     color: var(--black)!important;
