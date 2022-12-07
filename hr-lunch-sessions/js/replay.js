@@ -5,7 +5,7 @@ function loadVideo(e) {
     $('.wrapper .item').removeClass('active');
     $(this).closest('.item').addClass('active');
 
-    const activeVideo = document.querySelector('.wrapper .item.active');
+    // const activeVideo = document.querySelector('.wrapper .item.active'); -- NOT NEEDED
     const clickedIMG = e.target.id;
 
     if (clickedIMG === 'timothy') {
