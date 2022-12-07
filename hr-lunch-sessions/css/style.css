@@ -423,6 +423,9 @@ html {
 
 #main {
     background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 
 #main h2 {
