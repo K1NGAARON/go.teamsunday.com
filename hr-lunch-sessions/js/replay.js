@@ -28,6 +28,10 @@ function loadVideo(e) {
 
     const activeVideo = document.querySelector('.wrapper .item.active');
 
+    // CHANGE TITLE ABOVE VIDEO
+
+    // CHANGE VIDEO
+
 
     console.log(e.target);
     console.log(e.target.id);
