@@ -36,6 +36,14 @@
     background-image: none!important;
 }
 
+#hero-section {
+    background-color: var(--primary);
+}
+
+#hero-section h1,
+#hero-section p {
+    color: var(--white)!important;
+}
 
 .section .row img {
     border-radius: 12px;
