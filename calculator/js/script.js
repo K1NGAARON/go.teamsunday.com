@@ -62,6 +62,7 @@ const page = {
                 wardrobe_picking_fee: self.data.wardrobe_picking_fee,
                 wardrobe_platform_fee: self.data.wardrobe_platform_fee,
                 warehousing_costs: parseFloat(self.data.warehousing_costs),
+                wardrobe_error: parseFloat(self.data.wardrobe_error),
             }
 
             // data.append('payload', JSON.stringify(payLoad));
@@ -188,6 +189,8 @@ const page = {
                 + returnMgmt
                 + customerService;
 
+            const totalErrorCost = returnMgmt + customerService + resendingCosts;
+
             const totalCost = warehousingCost + pickingTime + dataInput + resendingCosts;
             // const costPerPackage = totalCost / amountPackages;
 
@@ -199,8 +202,6 @@ const page = {
             const wardrobeError = (amountPackages * logisticsCosts.helpdeskNecessary * 0.08 * logisticsCosts.hourlyCost)
                 + (0.01 * 2.5 * amountPackages);
             
-            
-
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
             // const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
 
@@ -211,7 +212,7 @@ const page = {
             // INPUT DATA ON FRONT END
             page.data.cost_reduction = costReduction;
             page.data.data_input_costs = dataInput;
-            page.data.error_management_costs = wardrobeError;
+            page.data.error_management_costs = totalErrorCost; // CHANGED
             page.data.fulfilment_costs = pickingTime;
             page.data.money_saved = moneySaved;
             page.data.total_costs = totalCost;
@@ -220,6 +221,8 @@ const page = {
             page.data.wardrobe_picking_fee = wardrobePickingFee;
             page.data.wardrobe_platform_fee = wardrobePlatformFee;
             page.data.warehousing_costs = warehousingCost;
+
+            page.data.wardrobe_error = wardrobeError; // CHANGED
 
 
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
