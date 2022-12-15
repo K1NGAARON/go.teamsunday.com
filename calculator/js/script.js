@@ -146,13 +146,13 @@ const page = {
             if (document.querySelector('#personal-note').checked) {
                 logisticsCosts.personalNote = 0.15;
             } else {
-                logisticsCosts.personalNote = 0;
+                logisticsCosts.personalNote = 0; // Not sure if needed
             }
 
             if (document.querySelector('#different-sizes').checked) {
                 logisticsCosts.differentSizes = 0.25;
             } else {
-                logisticsCosts.differentSizes = 0;
+                logisticsCosts.differentSizes = 0; // Not sure if needed
             }
 
             // GENERAL MATH
