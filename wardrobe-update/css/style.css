@@ -159,6 +159,8 @@
     height: auto;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 @media all and (max-width: 720px) {
