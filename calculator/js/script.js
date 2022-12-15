@@ -61,6 +61,7 @@ const page = {
                 wardrobe_fee_total: self.data.wardrobe_fee_total,
                 wardrobe_picking_fee: self.data.wardrobe_picking_fee,
                 wardrobe_platform_fee: self.data.wardrobe_platform_fee,
+                wardrobe_error: parseFloat(self.data.warehousing_costs), // Added this @ Bartel
                 warehousing_costs: parseFloat(self.data.warehousing_costs),
             }
 
