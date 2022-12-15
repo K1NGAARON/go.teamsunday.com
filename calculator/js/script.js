@@ -191,6 +191,8 @@ const page = {
 
             const totalErrorCost = returnMgmt + customerService + resendingCosts;
 
+            console.log(totalErrorCost);
+
             const totalCost = warehousingCost + pickingTime + dataInput + resendingCosts;
             // const costPerPackage = totalCost / amountPackages;
 
@@ -201,6 +203,8 @@ const page = {
 
             const wardrobeError = (amountPackages * logisticsCosts.helpdeskNecessary * 0.08 * logisticsCosts.hourlyCost)
                 + (0.01 * 2.5 * amountPackages);
+
+            console.log(wardrobeError);
             
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
             // const wardrobeCostPerPackage = wardrobeFeeTotal / amountPackages;
