@@ -179,7 +179,7 @@ const page = {
             const dataInput = amountPackages * logisticsCosts.dataInput * logisticsCosts.hourlyCost
                 + dutyMgmt
                 + internalFollowUp;
-
+            
 
             // Error Management Costs
             const returnMgmt = amountPackages * (logisticsCosts.returnTime * logisticsCosts.returnNecessary) * logisticsCosts.hourlyCost;
@@ -198,7 +198,6 @@ const page = {
 
             const wardrobeError = (amountPackages * logisticsCosts.helpdeskNecessary * 0.08 * logisticsCosts.hourlyCost)
                 + (0.01 * 2.5 * amountPackages);
-
             
 
             const wardrobeFeeTotal = wardrobePlatformFee + wardrobePickingFee + wardrobeInput;
@@ -211,7 +210,7 @@ const page = {
             // INPUT DATA ON FRONT END
             page.data.cost_reduction = costReduction;
             page.data.data_input_costs = dataInput;
-            page.data.error_management_costs = resendingCosts;
+            page.data.error_management_costs = wardrobeError;
             page.data.fulfilment_costs = pickingTime;
             page.data.money_saved = moneySaved;
             page.data.total_costs = totalCost;
@@ -220,6 +219,7 @@ const page = {
             page.data.wardrobe_picking_fee = wardrobePickingFee;
             page.data.wardrobe_platform_fee = wardrobePlatformFee;
             page.data.warehousing_costs = warehousingCost;
+
 
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
             $('#costHolder').html(germanNumberFormat.format(costReduction));
