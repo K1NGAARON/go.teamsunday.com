@@ -1,0 +1,81 @@
+.contact-form form {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: 1px solid var(--primary);
+    font-size: 14px;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.contact-form input:focus-visible,
+.contact-form select:focus-visible {
+    border: 3px solid var(--primary);
+    outline: none;
+    transition: var(--transition);
+}
+
+.contact-form label {
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.contact-form .hs-button {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 9px;
+    padding: 10px 30px;
+    margin: 8px auto 0 auto;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+}
+
+.contact-form .hs-button:hover {
+    border: none;
+    background-color: var(--black);
+    transition: var(--transition);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.contact-form .legal-consent-container .hs-form-booleancheckbox-display p {
+    font-size: 14px!important;
+}
+
+
+/* ERROR STYLING */
+.contact-form .hs-input.invalid {
+    border-color: red;
+}
+
+.contact-form .hs-error-msg,
+.contact-form .hs-error-msgs label {
+    color: red;
+}
+
+.contact-form .hs-error-msgs li:before,
+.contact-form .inputs-list li:before {
+    content: '';
+}
+
+/* CHECKBOX STYLING */
+.contact-form .hs-form-booleancheckbox {
+    display: flex;
+}
+
+.contact-form .hs-form-booleancheckbox input[type=checkbox] {
+    width: unset;
+}
