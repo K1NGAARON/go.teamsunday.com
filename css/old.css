@@ -2778,7 +2778,7 @@ h4.purple-title {
     margin: 8px 0;
     padding: 10px 15px;
     border-radius: 9px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--purple);
     font-size: 14px;
     color: var(--black);
     transition: var(--transition);
@@ -2787,7 +2787,7 @@ h4.purple-title {
 .contact-form input:focus-visible,
 .contact-form select:focus-visible,
 .contact-form textarea:focus-visible {
-    border: 3px solid var(--primary);
+    border: 3px solid var(--purple);
     outline: none;
     transition: var(--transition);
 }
@@ -2809,7 +2809,7 @@ h4.purple-title {
     padding: 10px 30px;
     margin: 8px auto 0 auto;
     color: var(--white);
-    background-color: var(--primary);
+    background-color: var(--purple)!important;
     border: none;
 }
 
