@@ -39,9 +39,6 @@
     color: var(--primary);
 }
 
-#form.section ul li:before {
-    content: '👉';
-}
 
 #form img {
     width: 100%;

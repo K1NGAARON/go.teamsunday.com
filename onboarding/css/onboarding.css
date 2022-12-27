@@ -86,51 +86,6 @@
     padding: 0!important;
 }
 
-.contact-form input,
-.contact-form select {
-    width: 100%;
-    margin: 8px 0!important;
-    padding: 10px 15px!important;
-    border-radius: 9px!important;
-    border: 1px solid var(--primary)!important;
-    font-size: 14px!important;
-    color: var(--black)!important;
-}
-
-#hero-section .contact-form label {
-    color: var(--black);
-    font-weight: 700!important;
-    margin-top: 10px!important;
-    font-size: 12px!important;
-}
-
-.contact-form input:focus-visible,
-.contact-form select:focus-visible {
-    border: 3px solid var(--primary)!important;
-    outline: none!important;
-}
-
-#hero-section .contact-form ._submit {
-    font-family: Poppins!important;
-    font-size: 18px!important;
-    font-weight: 700!important;
-    text-decoration: none;
-    width: 100%;
-    border-radius: 9px;
-    padding: 10px 30px!important;
-    margin: auto;
-    margin-top: 8px!important;
-    color: var(--white);
-    background-color: var(--primary)!important;
-}
-
-#hero-section .contact-form ._submit:hover {
-    background-color: var(--black)!important;
-    transition: var(--transition);
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 .social-proof-wrapper {
     margin-top: 40px;
 }
