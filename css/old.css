@@ -2834,6 +2834,9 @@ h4.purple-title {
     font-size: 14px!important;
 }
 
+.contact-form ul {
+    margin: 0;
+}
 
 /* ERROR STYLING */
 .contact-form .hs-input.invalid {
