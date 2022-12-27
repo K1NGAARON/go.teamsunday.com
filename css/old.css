@@ -969,9 +969,7 @@ ul,li {
 ul {
     list-style: none;
 } 
-.hubspot-form ul li::before {
-    content: none!important;
-}
+
 ul li::before {
     content: "\2022";
     color: var(--purple);
@@ -1326,10 +1324,6 @@ ul li::before {
 .site .button:hover, 
 .site .button:active, 
 button:hover, button:active, 
-input[type=submit]:hover, 
-input[type=submit]:active, 
-input[type=reset]:hover, 
-input[type=reset]:active, 
 .wp-block-search .wp-block-search__button:hover, 
 .wp-block-search .wp-block-search__button:active, 
 .wp-block-button .wp-block-button__link:hover, 
@@ -2767,13 +2761,19 @@ h4.purple-title {
 }
 
 /* HUBSPOT FORM */
+.contact-form input[type=submit]:not(:hover):not(:active):not(.has-background) {
+    background-color: unset;
+    color: var(--white);
+}
+
 .contact-form form {
     margin: 0;
     padding: 0;
 }
 
 .contact-form input,
-.contact-form select {
+.contact-form select,
+.contact-form textarea {
     width: 100%;
     margin: 8px 0;
     padding: 10px 15px;
@@ -2785,7 +2785,8 @@ h4.purple-title {
 }
 
 .contact-form input:focus-visible,
-.contact-form select:focus-visible {
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible {
     border: 3px solid var(--primary);
     outline: none;
     transition: var(--transition);
@@ -2810,6 +2811,15 @@ h4.purple-title {
     color: var(--white);
     background-color: var(--primary);
     border: none;
+}
+
+.contact-form.white .hs-button {
+    background-color: var(--white)!important;
+    color: var(--black)!important;
+}
+
+.contact-form.white .legal-consent-container .hs-form-booleancheckbox-display p {
+    color: var(--white);
 }
 
 .contact-form .hs-button:hover {
@@ -2846,5 +2856,8 @@ h4.purple-title {
 }
 
 .contact-form .hs-form-booleancheckbox input[type=checkbox] {
-    width: unset;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
 }
