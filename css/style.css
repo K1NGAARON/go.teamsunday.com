@@ -473,6 +473,15 @@ ul li {
     font-size: 14px!important;
 }
 
+.contact-form.white .hs-button {
+    background-color: var(--primary)!important;
+    color: var(--white)!important;
+}
+
+.legal-consent-container .hs-form-booleancheckbox-display>span p {
+    color: var(--black)!important;
+}
+
 
 /* ERROR STYLING */
 .contact-form .hs-input.invalid {
