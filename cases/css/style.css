@@ -31,7 +31,6 @@
 
 .banner {
     position: relative;
-    height: 90vh;
 
     background-image: url('../delaware/img/banner.jpg');
     background-size: cover;
@@ -50,9 +49,18 @@
     opacity: 1;
 }
 
+.section.banner .primary-btn {
+    background-color: transparent;
+    padding: 5px 15px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
 .banner h1,
 .banner p,
-.banner .label {
+.banner .label,
+.banner a {
     color: var(--white);
     z-index: 99;
 }
@@ -214,4 +222,48 @@ h2.purple {
     background-color: var(--black);
     color: var(--white);
     transition: var(--transition);
+}
+
+@media (max-width: 860px) {
+    .header.section nav,
+    .header.section .primary-btn {
+        display: none;
+    }
+
+    .header.section .row {
+        justify-content: center;
+    }
+
+    .banner h1, 
+    .banner p {
+        max-width: none;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 540px) {
+    .section.banner h1,
+    .section.banner p {
+        text-align: left;
+    }
+
+    .section.banner a {
+        margin-left: 0;
+    }
+
+    img:not(#header-logo) {
+        margin: 0 auto;
+    }
+
+    .section.related-content .wrapper .item .logo {
+        max-width: 200px!important;
+        margin-left: 0!important;
+    }
+
+    .section.related-content .wrapper .item p {
+        text-align: left;
+    }
 }
