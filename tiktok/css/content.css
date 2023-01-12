@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.wrapper .item {
+    flex: 1 0 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.related-content .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.related-content .wrapper .item {
+    flex: 1 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.item .logo,
+.item h5,
+.item p {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.item .featured {
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.item .logo {
+    max-width: 200px;
+}
+
+.item h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item .primary-btn {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    transition: var(--transition);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.item .primary-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+@media (max-width: 540px) {
+    .section.related-content .wrapper .item .logo {
+        max-width: 200px!important;
+        margin-left: 0!important;
+    }
+
+    .section.related-content .wrapper .item p {
+        text-align: left;
+    }
+}
