@@ -275,3 +275,10 @@
         position: unset;
     }
 }
+
+@media (max-width: 600px) {
+    #hero-section .row .col:nth-child(1),
+    #hero-section .row .col:nth-child(2) {
+        width: 100%!important;
+    }
+}
