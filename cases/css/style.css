@@ -1,12 +1,23 @@
-.header .row {
+.section.header .row {
     justify-content: flex-start;
     gap: 40px;
     margin: 20px auto;
+    max-width: 1600px;
 }
 
 .header nav {
     display: flex;
     gap: 40px;
+}
+
+.header nav a {
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.header nav a:hover {
+    color: var(--primary);
+    transition: var(--transition);
 }
 
 .header .logo {
@@ -18,8 +29,112 @@
     margin-left: auto;
 }
 
-.purple {
+.banner {
+    position: relative;
+    height: 90vh;
+
+    background-image: url('../delaware/img/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url('../delaware/img/overlay.png') center left no-repeat;
+    opacity: 1;
+}
+
+.banner h1,
+.banner p,
+.banner .label {
+    color: var(--white);
+    z-index: 99;
+}
+
+.banner h1,
+.banner p {
+    max-width: 60%;
+}
+
+.banner h1 {
+    font-size: 60px;
+}
+
+.section.banner .row {
+    align-items: flex-start;
+    max-width: 1600px;
+}
+
+.section .row {
+    max-width: 960px;
+}
+
+.section .purple {
     color: var(--primary);
+}
+
+.section .bold {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.section .uppercase {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section.purple {
+    color: var(--white);
+}
+
+.section.contact .row {
+    max-width: 1600px;
+}
+
+.contact-form.white .hs-button {
+    background-color: var(--white)!important;
+    color: var(--black)!important;
+}
+
+.legal-consent-container .hs-form-booleancheckbox-display>span p {
+    color: var(--white)!important;
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+    font-weight: 600;
+}
+
+.banner .label {
+    padding: 5px 15px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+}
+
+.banner .wrapper.labels {
+    gap: 20px;
+}
+
+h2.purple {
+    font-size: 46px;
+}
+
+.section .container {
+    background-color:#fafafa;
+    padding: 40px;
+}
+
+.section.related-content .row {
+    max-width: 1600px;
 }
 
 .wrapper {
@@ -30,12 +145,10 @@
 
 .wrapper .item {
     flex: 1 0 350px;
-    
+
     display: flex;
     flex-direction: column;
 }
-
-
 
 .related-content .wrapper {
     display: flex;
