@@ -75,6 +75,14 @@
     max-width: 960px;
 }
 
+.section .wrapper {
+    align-items: center;
+}
+
+.section .wrapper .item .purple {
+    font-size: 22px;
+}
+
 .section .purple {
     color: var(--primary);
 }
@@ -91,6 +99,10 @@
 
 .section.purple {
     color: var(--white);
+}
+
+.section img {
+    width: 100%;
 }
 
 .section.contact .row {
