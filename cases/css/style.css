@@ -250,6 +250,30 @@ h2.purple {
         text-align: left;
     }
 
+    .header .logo {
+        max-width: 150px!important;
+    }
+
+    h2.purple {
+        font-size: 26px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .related-content .wrapper .item {
+        gap: 0;
+    }
+
+    .section .container {
+        padding: 20px;
+    }
+
+    .section.banner h1 {
+        font-size: 40px;
+    }
+
     .section.banner a {
         margin-left: 0;
     }
