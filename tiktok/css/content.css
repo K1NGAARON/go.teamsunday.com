@@ -1,3 +1,11 @@
+.section .row .item .featured {
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 30px;
+}
+
 .wrapper {
     display: flex;
     flex-flow: row wrap;
