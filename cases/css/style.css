@@ -169,7 +169,7 @@ h2.purple {
     display: flex;
     flex-direction: column;
 }
-
+/* 
 .related-content .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -222,7 +222,7 @@ h2.purple {
     background-color: var(--black);
     color: var(--white);
     transition: var(--transition);
-}
+} */
 
 @media (max-width: 860px) {
     .header.section nav,
