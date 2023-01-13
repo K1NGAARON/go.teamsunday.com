@@ -216,7 +216,7 @@ html {
 }
 
 #output {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: var(--primary);
     font-weight: 700;
 }
@@ -283,6 +283,33 @@ html {
     border: 3px solid var(--primary);
 }
 
+#calculator .output-wrapper {
+    flex-direction: column;
+}
+
+#calculator .monthly-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#calculator .yearly-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#calculator .yearly-wrapper div {
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+#calculator .yearly-wrapper .year {
+    margin-left: 5px;
+}
+
+#calculator .hidden {
+    display: none;
+}
 
 
 @media (max-width: 768px) {

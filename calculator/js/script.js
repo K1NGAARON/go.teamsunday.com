@@ -104,6 +104,7 @@ const page = {
                 output.innerHTML = this.value;
             }
 
+            // const monthlyPackages = slider.value;
             const amountPackages = slider.value * 12;
 
             $('#calculator > .item.output').addClass('active');
@@ -157,6 +158,9 @@ const page = {
             }
 
             // GENERAL MATH
+
+            // const monthlyPackages = document.querySelector('');
+
             // Warehousing Costs
             const shippingSoftware = logisticsCosts.softwareCost * 12;
             const stockCounts = 2 * logisticsCosts.stockCount * logisticsCosts.hourlyCost;
@@ -231,9 +235,9 @@ const page = {
 
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
             $('#costHolder').html(germanNumberFormat.format(costReduction.toFixed(2)));
-            console.log(costReduction);
-            console.log(costReduction.toFixed(2));
             $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved.toFixed(2)));
+            $('#outputYearly').html(germanNumberFormat.format(amountPackages));
+            $('.yearly').removeClass('hidden');
         }
     }
 }
