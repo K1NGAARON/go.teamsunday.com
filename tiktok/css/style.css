@@ -243,6 +243,12 @@
     color: var(--white);
 }
 
+@media (max-width: 540px) {
+    img:not(#header-logo) {
+        margin: 0 auto!important;
+    }
+}
+
 @media all and (max-width: 720px) {
     #hero-section .row h1 {
         font-size: 30px;
