@@ -63,6 +63,7 @@
     background-color: transparent;
     border: 1px solid var(--black);
     transition: var(--transition);
+    margin-top: auto;
     margin-left: 30px;
     margin-bottom: 30px;
 }
