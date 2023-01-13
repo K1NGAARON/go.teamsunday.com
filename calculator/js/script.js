@@ -230,8 +230,10 @@ const page = {
 
 
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
-            $('#costHolder').html(germanNumberFormat.format(costReduction));
-            $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved));
+            $('#costHolder').html(germanNumberFormat.format(costReduction.toFixed(2)));
+            console.log(costReduction);
+            console.log(costReduction.toFixed(2));
+            $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved.toFixed(2)));
         }
     }
 }
