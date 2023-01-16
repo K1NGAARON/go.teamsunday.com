@@ -235,7 +235,7 @@ const page = {
 
             const germanNumberFormat = new Intl.NumberFormat('de-DE');
             $('#costHolder').html(germanNumberFormat.format(costReduction.toFixed(2)));
-            $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved.toFixed(2)));
+            $('#moneySavedHolder').html(germanNumberFormat.format(moneySaved.toFixed(0)));
             $('#outputYearly').html(germanNumberFormat.format(amountPackages));
             $('.yearly').removeClass('hidden');
         }
