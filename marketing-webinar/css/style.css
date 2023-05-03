@@ -311,10 +311,13 @@ html {
     color: var(--white);
 }
 
+.section .review.wrapper {
+    display: none;
+}
 
 
 #hero {
-    height: 80vh;
+    height: 90vh;
     margin: 0;
     position: relative;
     background-image: url('../img/banner.jpg');
