@@ -5,7 +5,7 @@ function copySuccess() {
 $('#share').on('click', function(e) {
     e.preventDefault();
     var $temp = $("<input>");
-    var $url = 'https://go.teamsunday.com/hr-lunch-sessions/';
+    var $url = 'https://go.teamsunday.com/marketing-webinar';
 
     $("body").append($temp);
     $temp.val($url).select();
