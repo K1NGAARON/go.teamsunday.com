@@ -535,7 +535,9 @@ html {
 
 @media (max-width: 768px) {
     #hero {
-        height: 60vh;
+        height: 20vh;
+        background-size: cover;
+        min-height: fit-content;
     }
 
     .section h1 {
