@@ -14,3 +14,9 @@
     width: 100%;
     max-width: none;
 }
+
+@media (max-width: 560px) {
+    .social-proof-wrapper {
+        display: none;
+    }
+}
